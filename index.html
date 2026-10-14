@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olive Opticals — Luxury Eyewear, Thally, Tamil Nadu</title>
+<meta name="description" content="Olive Opticals, Thally — premium eyeglasses, sunglasses, 3D gallery, AI frame finder, live face-shape detection, online eye check and eye check-up booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#a4556b;--rose-deep:#5e2c3d;--rose-mid:#c47a8d;--ivory:#fdf8f4;--ivory-pure:#fffdfb;--blush:#f7e9ee;--ink:#2a1f24;--stone:#7a6b70;--gold:#c99a6b;--gold-light:#e8c9a8;--gold-pale:#f7e9dc;--line:rgba(94,44,61,.14);--shadow-sm:0 8px 24px rgba(42,31,36,.07);--shadow:0 26px 70px rgba(42,31,36,.15);--radius:22px;--radius-lg:32px;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif;--ease:cubic-bezier(.22,.68,.16,1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);line-height:1.65;font-weight:300;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button{cursor:pointer;border:0;background:none;color:inherit;font-family:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3,h4,.serif{font-family:var(--serif);font-weight:500;line-height:1.08}
+.container{width:min(1280px,calc(100% - 48px));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--rose)}
+.eyebrow::before{content:"";width:32px;height:1px;background:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:50px;padding:0 1.9rem;border-radius:999px;font-size:.76rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:.4s var(--ease)}
+.btn-primary{background:var(--rose);color:#fff}.btn-primary:hover{background:var(--rose-deep)}
+.btn-gold{background:linear-gradient(120deg,#c99a6b,#e0b891);color:#fff}.btn-gold:hover{filter:brightness(.95)}
+.btn-ghost{border:1px solid rgba(253,248,244,.45);color:var(--ivory)}.btn-ghost:hover{background:rgba(253,248,244,.12)}
+.btn-outline{border:1px solid var(--rose);color:var(--rose)}.btn-outline:hover{background:var(--rose);color:#fff}
+.btn-sm{min-height:40px;padding:0 1.15rem;font-size:.66rem}
+.btn[disabled]{opacity:.45;pointer-events:none}
+.badge{display:inline-flex;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;padding:.42rem .75rem;border-radius:999px;background:var(--gold-pale);color:#8a5f37}
+.muted{color:var(--stone);font-size:.86rem}
+.topbar{background:var(--rose-deep);color:rgba(253,248,244,.85);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;text-align:center;padding:.72rem 1rem}
+header{position:sticky;top:0;z-index:80;background:color-mix(in srgb,var(--ivory) 84%,transparent);backdrop-filter:blur(22px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:1rem 0}
+.logo{display:flex;align-items:center;gap:.85rem}
+.logo-mark{width:46px;height:46px;border-radius:50%;background:radial-gradient(circle at 30% 25%,var(--rose-mid),var(--rose-deep));color:var(--gold-light);display:grid;place-items:center;font-family:var(--serif);font-size:1.5rem}
+.logo-name{font-family:var(--serif);font-size:1.45rem;color:var(--rose-deep)}
+.logo-sub{font-size:.55rem;letter-spacing:.38em;text-transform:uppercase;color:var(--rose)}
+.nav-links{display:flex;gap:1.4rem;font-size:.78rem}
+.nav-links a{position:relative;padding:.35rem 0}
+.nav-links a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:1px;background:var(--gold);transition:.4s var(--ease);transform:translateX(-50%)}
+.nav-links a:hover::after{width:100%}
+.nav-actions{display:flex;gap:.45rem}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,253,251,.6)}
+.icon-btn:hover{background:var(--rose);color:#fff}
+.cart-count{position:absolute;top:-3px;right:-3px;min-width:18px;height:18px;border-radius:999px;background:var(--gold);color:#fff;font-size:.58rem;display:grid;place-items:center}
+.menu-toggle{display:none}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:var(--ivory);overflow:hidden;background:#4a1f2d}
+#waveCanvas{position:absolute;inset:0;width:100%;height:100%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,36,.35),rgba(42,31,36,.55))}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:5rem;align-items:center;padding:0 0 8rem}
+.hero h1{font-size:clamp(3.1rem,7.4vw,6.2rem);margin-top:1.4rem}
+.hero h1 .line{display:block;overflow:hidden}.hero h1 span{display:block;transform:translateY(110%);animation:rise 1.1s var(--ease) forwards}
+.hero h1 .line:nth-child(2) span{animation-delay:.14s}.hero h1 .line:nth-child(3) span{animation-delay:.28s}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero-copy{max-width:36rem;margin:1.8rem 0 2.4rem;color:rgba(253,248,244,.85)}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero-visual{position:relative;z-index:2}
+.hero-frame{border-radius:260px 260px var(--radius-lg) var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transform:rotate(2deg)}
+.hero-frame img{width:100%;height:min(620px,68vh);object-fit:cover}
+.hero-card{position:absolute;left:-3rem;bottom:3rem;background:rgba(255,253,251,.95);color:var(--ink);padding:1.35rem 1.55rem;border-radius:18px;box-shadow:var(--shadow);max-width:250px}
+.hero-card strong{font-family:var(--serif);font-size:1.15rem;display:block;color:var(--rose-deep)}
+
+/* ---------- Shared effect canvases ---------- */
+.fx-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+
+/* Editorial band — Liquid Glass (refracts the campaign photo) */
+.editorial-band{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:480px;display:flex;align-items:flex-end;box-shadow:var(--shadow);background:linear-gradient(120deg,#4a1f2d,#a4556b)}
+.editorial-band::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(26,15,20,.84),rgba(26,15,20,.12) 64%)}
+.editorial-overlay{position:relative;z-index:2;padding:clamp(2rem,5vw,3.5rem);max-width:620px;color:var(--ivory)}
+.editorial-overlay h2{font-size:clamp(2rem,4.5vw,3.2rem);margin:1rem 0}
+.editorial-overlay p{color:rgba(253,248,244,.85);margin-bottom:1.6rem}
+
+/* Eye band — Glowing Particles */
+.eye-band{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:480px;display:flex;align-items:center;color:var(--ivory);box-shadow:var(--shadow);background:radial-gradient(120% 140% at 80% 50%,#5e2c3d 0%,#2a1018 55%,#1a0f14 100%)}
+.eye-band::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,rgba(26,15,20,.78),rgba(26,15,20,0) 66%)}
+.eye-content{position:relative;z-index:2;padding:clamp(2rem,5vw,3.5rem);max-width:620px}
+.eye-content h2{font-size:clamp(2rem,4.5vw,3.2rem);margin:1rem 0}
+.eye-content p{color:rgba(253,248,244,.82);margin-bottom:1.6rem}
+.eye-actions{display:flex;gap:.8rem;flex-wrap:wrap}
+
+.shadow-band{position:relative;border-radius:var(--radius-lg);overflow:hidden;min-height:340px;display:flex;align-items:center;color:var(--ivory);box-shadow:var(--shadow);background:#120a10}
+#shadowCanvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.shadow-content{position:relative;z-index:2;padding:clamp(2rem,5vw,3.5rem);max-width:620px}
+.shadow-band::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(42,31,36,.75),rgba(42,31,36,.15));pointer-events:none}
+.shadow-content{z-index:2}
+.shadow-content h2{font-size:clamp(2rem,4.5vw,3.2rem);margin:1rem 0}
+.shadow-content p{color:rgba(253,248,244,.8);margin-bottom:1.6rem}
+
+/* 3D gallery section — Butterfly Drift behind it */
+.fx-dark{position:relative;overflow:hidden;background:#1a0f14;color:var(--ivory)}
+.fx-dark .container{position:relative;z-index:2}
+.fx-dark .section-head h2{color:var(--ivory)}
+.fx-dark .eyebrow{color:var(--gold-light)}
+.fx-dark .section-head p,.fx-dark .muted{color:rgba(253,248,244,.72)}
+.fx-vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 100% at 50% 50%,rgba(0,0,0,0) 34%,rgba(0,0,0,.72) 100%)}
+.gallery3d{perspective:1200px;height:420px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.g3d-stage{--tz:340px;position:relative;transform-style:preserve-3d;animation:spin3d 24s linear infinite;width:280px;height:200px}
+.g3d-card{position:absolute;inset:0;border-radius:18px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.45);border:1px solid rgba(232,201,168,.4);transform:rotateY(calc(var(--i) * 60deg)) translateZ(var(--tz))}
+.g3d-card img{width:100%;height:100%;object-fit:cover}
+@keyframes spin3d{from{transform:rotateY(0)}to{transform:rotateY(360deg)}}
+section{padding:6rem 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:3rem;margin-bottom:3rem}
+.section-head h2{font-size:clamp(2.2rem,4.5vw,3.5rem);margin-top:1rem}
+.section-head p{max-width:30rem}
+.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:1.2rem;width:120px}
+.cats{display:grid;grid-template-columns:repeat(12,1fr);gap:1.2rem}
+.cat-card{position:relative;grid-column:span 3;min-height:300px;border-radius:var(--radius);overflow:hidden;display:flex;align-items:flex-end;color:var(--ivory);box-shadow:var(--shadow-sm);transition:.5s var(--ease)}
+.cat-card:nth-child(1){grid-column:span 5}.cat-card:nth-child(2){grid-column:span 4}.cat-card:nth-child(3){grid-column:span 3}
+.cat-card:nth-child(4),.cat-card:nth-child(5),.cat-card:nth-child(6){grid-column:span 4}
+.cat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.cat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(185deg,rgba(42,31,36,.05) 25%,rgba(42,31,36,.82))}
+.cat-card:hover{transform:translateY(-8px)}
+.cat-card:hover img{transform:scale(1.09)}
+.cat-body{position:relative;z-index:2;padding:1.6rem;width:100%}
+.cat-body h3{font-size:1.5rem}
+.cat-arrow{position:absolute;right:1.4rem;bottom:1.6rem;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(253,248,244,.18);display:grid;place-items:center}
+.cat-card:hover .cat-arrow{background:var(--gold)}
+.toolbar{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;margin-bottom:1.6rem}
+.search{position:relative;flex:1;min-width:260px;max-width:430px}
+.search input{width:100%;padding:1rem 1.2rem 1rem 3rem;border:1px solid var(--line);border-radius:999px;background:var(--ivory-pure)}
+.search::before{content:"⌕";position:absolute;left:1.15rem;top:50%;transform:translateY(-50%);opacity:.5}
+.filters{display:flex;flex-wrap:wrap;gap:.55rem}
+.chip{padding:.68rem 1.25rem;border-radius:999px;border:1px solid var(--line);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:#5c4a51;background:rgba(255,253,251,.6)}
+.chip.active{background:var(--rose);color:#fff;border-color:var(--rose)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.product{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.5s var(--ease)}
+.product:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.product-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:linear-gradient(160deg,var(--blush),var(--ivory-pure))}
+.product-img img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.product:hover .product-img img{transform:scale(1.08)}
+.product-tag{position:absolute;left:1rem;top:1rem;z-index:2}
+.wish{position:absolute;right:.9rem;top:.9rem;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,253,251,.92);display:grid;place-items:center}
+.wish:hover,.wish.active{background:var(--rose);color:#fff}
+.product-body{padding:1.3rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.product-brand{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rose)}
+.product-body h3{font-size:1.25rem;margin:.2rem 0}
+.price{font-family:var(--serif);font-size:1.25rem;color:var(--rose-deep)}
+.price s{font-family:var(--sans);font-size:.78rem;color:#b0a3a8;margin-left:.45rem}
+.stock-dot{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;color:var(--stone)}
+.stock-dot::before{content:"";width:6px;height:6px;border-radius:50%;background:#c98ba0}
+.product-actions{margin-top:auto;display:flex;gap:.5rem;padding-top:1rem}
+.product-actions .btn{flex:1}
+.studio{background:linear-gradient(140deg,#4a1f2d,#7c3a4f 55%,#a4556b);color:var(--ivory);border-radius:var(--radius-lg);padding:clamp(2rem,5vw,4rem);display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;box-shadow:var(--shadow)}
+.quiz{background:rgba(255,253,251,.08);border:1px solid rgba(232,201,168,.32);border-radius:var(--radius);padding:2rem}
+.quiz-step{display:none}.quiz-step.active{display:block;animation:fade .5s var(--ease)}
+.quiz h3{font-size:1.6rem;margin:.5rem 0 1rem}
+.opt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}
+.opt{border:1px solid rgba(253,248,244,.24);border-radius:14px;padding:1rem;text-align:left;font-size:.88rem;color:rgba(253,248,244,.9)}
+.opt.selected{background:var(--gold);border-color:var(--gold);color:#fff}
+.result-card{background:rgba(255,253,251,.09);border:1px solid rgba(232,201,168,.32);border-radius:16px;padding:1.2rem;margin-top:.9rem}
+
+/* Glass section — standalone lens band */
+.glass-note{display:inline-flex;margin-top:1.2rem;font-size:.72rem;letter-spacing:.08em;color:rgba(253,248,244,.6)}
+
+/* Face-shape scanner */
+.scan{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.camera-card{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
+.camera-wrap{position:relative;border-radius:16px;overflow:hidden;background:#241a1e;aspect-ratio:4/3}
+#cam{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:scaleX(-1)}
+#camCanvas{position:absolute;inset:0;width:100%;height:100%;transform:scaleX(-1);pointer-events:none}
+.scan-status{position:absolute;left:50%;bottom:.9rem;transform:translateX(-50%);background:rgba(42,31,36,.78);color:var(--ivory);padding:.5rem 1.1rem;border-radius:999px;font-size:.74rem;letter-spacing:.06em;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}
+.camera-controls{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+.shape-panel{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;box-shadow:var(--shadow-sm)}
+.shape-name{font-family:var(--serif);font-size:2.6rem;color:var(--rose-deep);margin:.5rem 0 .4rem;line-height:1}
+.meas{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.meas span{font-size:.68rem;letter-spacing:.08em;background:var(--blush);color:var(--rose-deep);padding:.35rem .75rem;border-radius:999px}
+.rec-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1rem}
+.rec{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--ivory);display:flex;flex-direction:column}
+.rec img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.rec-body{padding:.9rem;display:flex;flex-direction:column;gap:.2rem;flex:1}
+.rec-body strong{font-family:var(--serif);font-size:1.1rem;font-weight:500}
+.rec-why{font-size:.74rem;color:var(--stone);line-height:1.45}
+.shape-pick{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin-top:.9rem}
+.shape-card{display:flex;flex-direction:column;align-items:center;gap:.35rem;padding:.7rem .3rem;border:1px solid var(--line);border-radius:16px;background:var(--ivory);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#5c4a51;transition:.3s var(--ease)}
+.shape-card svg{width:100%;max-width:72px;height:auto;border-radius:10px}
+.shape-card span{line-height:1.2}
+.shape-art{position:relative;width:100%;max-width:72px}
+.shape-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:10px;z-index:1}
+.cam-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--gold-light);text-align:center;font-size:.78rem;letter-spacing:.08em;background:radial-gradient(circle at 50% 38%,#5b2e3d,#241a1e)}
+.cam-placeholder svg{width:46%;max-width:220px;height:auto}
+.camera-wrap.live .cam-placeholder,.camera-wrap.photo .cam-placeholder{display:none}
+.shape-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.shape-card.active{background:var(--rose);color:#fff;border-color:var(--rose)}
+.shape-card.active{box-shadow:0 0 0 3px rgba(164,85,107,.28)}
+#photoEl{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.camera-wrap.photo #photoEl{display:block}
+.camera-wrap.photo #cam{display:none}
+.camera-wrap.photo #camCanvas{transform:none}
+@media(max-width:640px){.shape-pick{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- Online eye check ---------- */
+.et-section{background:linear-gradient(180deg,var(--ivory),var(--blush))}
+.eyetest{display:grid;grid-template-columns:.72fr 1.28fr;gap:2rem;align-items:start}
+.et-side{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;position:sticky;top:96px}
+.et-side h3{font-size:1.5rem}
+.et-steps{list-style:none;display:grid;gap:.25rem;margin:1.1rem 0}
+.et-steps li{display:flex;align-items:center;gap:.8rem;padding:.55rem .65rem;border-radius:12px;font-size:.86rem;color:var(--stone)}
+.et-steps li i{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-style:normal;font-size:.7rem;flex:none}
+.et-steps li.active{background:var(--blush);color:var(--rose-deep)}
+.et-steps li.active i{background:var(--rose);border-color:var(--rose);color:#fff}
+.et-steps li.done i{background:var(--gold);border-color:var(--gold);color:#fff}
+.et-stage{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.4rem,3vw,2.2rem);box-shadow:var(--shadow-sm);min-height:540px}
+.et-stage>*+*{margin-top:1.1rem}
+.et-h{font-size:clamp(1.7rem,3vw,2.2rem);color:var(--rose-deep)}
+.et-board{background:#fff;border:1px solid var(--line);border-radius:16px;min-height:250px;display:grid;place-items:center;padding:1.2rem;overflow:hidden}
+.et-board canvas{display:block;max-width:100%;height:auto}
+.et-tips{list-style:none;display:grid;gap:.45rem;font-size:.86rem;color:var(--stone)}
+.et-tips li{padding-left:1.3rem;position:relative}
+.et-tips li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--gold)}
+.card-ref{--w:320px;width:var(--w);height:calc(var(--w) * .6306);max-width:100%;border-radius:calc(var(--w) * .047);background:linear-gradient(135deg,#d9cfd2,#bfb2b7);display:grid;place-items:center;font-size:.72rem;letter-spacing:.1em;color:#5c4a51;margin-inline:auto;box-shadow:var(--shadow-sm)}
+.et-range{padding:0;accent-color:var(--rose)}
+.et-meta{display:flex;justify-content:space-between;gap:1rem;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rose)}
+.dpad{display:grid;grid-template-columns:repeat(3,64px);grid-auto-rows:56px;gap:.5rem;justify-content:center}
+.dpad button{border:1px solid var(--line);border-radius:14px;background:var(--ivory);font-size:1.3rem;color:var(--rose-deep);transition:.25s var(--ease)}
+.dpad button:hover{background:var(--rose);color:#fff;border-color:var(--rose)}
+.dpad .dpad-no{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;line-height:1.2;padding:.2rem}
+.et-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.6rem}
+.et-opts button,.et-choice button{border:1px solid var(--line);border-radius:14px;padding:.9rem 1rem;background:var(--ivory);font-size:.9rem;text-align:center;transition:.25s var(--ease)}
+.et-opts button:hover,.et-choice button:hover{background:var(--rose);color:#fff;border-color:var(--rose)}
+.et-choice{display:grid;gap:.6rem}
+.et-choice button{text-align:left}
+.et-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.et-res{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
+.et-res-card{border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;background:var(--ivory)}
+.et-res-card strong{display:block;font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--rose-deep);margin:.15rem 0}
+.et-res-card small{display:block;color:var(--stone);font-size:.78rem}
+.pill{display:inline-flex;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
+.pill.ok{background:#e6f0e2;color:#3f6b34}.pill.watch{background:var(--gold-pale);color:#8a5f37}.pill.see{background:#f6dde5;color:#8a2f4c}
+.et-alert{border-left:3px solid var(--rose);background:var(--blush);padding:1rem 1.2rem;border-radius:0 14px 14px 0;font-size:.84rem;color:var(--rose-deep)}
+.et-verdict{font-family:var(--serif);font-size:1.7rem;color:var(--rose-deep);line-height:1.15}
+
+.card{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow-sm)}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.trust h3{font-size:1.3rem;margin:.8rem 0 .5rem}
+.booking-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.5rem}
+.form-card{background:var(--ivory-pure);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.5rem)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+label{display:block;font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:.45rem}
+input,select,textarea{width:100%;padding:.95rem;border:1px solid var(--line);border-radius:13px;background:var(--ivory);font-size:.9rem;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(232,201,168,.28)}
+textarea{resize:vertical}
+.consent{display:flex;gap:.7rem;align-items:flex-start;font-size:.82rem;color:var(--stone);margin-top:1.1rem}
+.consent input{width:auto;margin-top:.3rem;accent-color:var(--rose)}
+footer{background:var(--rose-deep);color:rgba(253,248,244,.75);padding:5rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.3fr;gap:3rem}
+footer h4{color:var(--ivory);font-size:1.2rem;margin-bottom:1rem}
+.footer-links{display:grid;gap:.5rem;font-size:.86rem}
+.footer-bottom{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(253,248,244,.14);display:flex;justify-content:space-between;flex-wrap:wrap;font-size:.72rem}
+.drawer{position:fixed;inset:0;z-index:120;display:none}.drawer.open{display:block}
+.drawer-backdrop{position:absolute;inset:0;background:rgba(42,31,36,.55)}
+.drawer-panel{position:absolute;right:0;top:0;height:100%;width:min(440px,95vw);background:var(--ivory);padding:1.8rem;overflow:auto;box-shadow:-30px 0 80px rgba(0,0,0,.3)}
+.cart-item{display:grid;grid-template-columns:72px 1fr auto;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);align-items:center}
+.cart-item img{width:72px;height:72px;object-fit:cover;border-radius:12px}
+.qty{display:inline-flex;align-items:center;gap:.6rem;margin-top:.5rem}
+.qty button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line)}
+.qty button:hover{background:var(--rose);color:#fff}
+.modal{position:fixed;inset:0;z-index:130;display:none;place-items:center;padding:1.2rem}.modal.open{display:grid}
+.modal-box{background:var(--ivory);border-radius:var(--radius-lg);width:min(980px,100%);max-height:92vh;overflow:auto;box-shadow:var(--shadow)}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;padding:clamp(1.5rem,3vw,2.5rem)}
+.detail-img{border-radius:18px;overflow:hidden;background:linear-gradient(160deg,var(--blush),var(--ivory-pure))}
+.detail-img img{aspect-ratio:4/3.2;width:100%;object-fit:cover}
+.assistant-btn{position:fixed;right:24px;bottom:24px;z-index:110;background:var(--rose-deep);color:var(--ivory);border-radius:999px;padding:1rem 1.5rem;display:flex;align-items:center;gap:.65rem;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;box-shadow:var(--shadow)}
+.assistant{position:fixed;right:24px;bottom:92px;z-index:115;width:min(390px,92vw);height:min(540px,74vh);background:var(--ivory);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);display:none;flex-direction:column}
+.assistant.open{display:flex}
+.assistant-head{background:var(--rose-deep);color:var(--ivory);padding:1.1rem 1.3rem;display:flex;justify-content:space-between}
+.assistant-log{flex:1;overflow:auto;padding:1.2rem;display:flex;flex-direction:column;gap:.75rem}
+.msg{max-width:86%;padding:.8rem 1rem;border-radius:18px;font-size:.85rem}
+.msg.bot{background:var(--ivory-pure);border:1px solid var(--line)}
+.msg.user{background:var(--rose);color:#fff;align-self:flex-end}
+.assistant-input{display:flex;gap:.55rem;padding:.9rem;border-top:1px solid var(--line)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);background:var(--rose-deep);color:var(--ivory);padding:.9rem 1.5rem;border-radius:999px;z-index:140;opacity:0;transition:.45s var(--ease);font-size:.82rem;pointer-events:none;max-width:92vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.reveal{opacity:0;transform:translateY(30px);transition:1s var(--ease)}.reveal.visible{opacity:1;transform:none}
+.hidden{display:none!important}
+@keyframes rise{to{transform:none}}@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:1180px){.nav-links{gap:1rem;font-size:.72rem}}
+@media(max-width:1080px){.nav-links{display:none}.menu-toggle{display:grid}.hero-grid{grid-template-columns:1fr;padding:8rem 0 6rem}.products{grid-template-columns:repeat(2,1fr)}.cats{grid-template-columns:repeat(2,1fr)}.cat-card{grid-column:span 1!important}.trust{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero-card{left:1rem}.hero-frame img{height:430px}.editorial-band,.eye-band{min-height:420px}.shadow-band{min-height:340px}.g3d-stage{width:220px;height:160px;--tz:240px}.scan{grid-template-columns:1fr}.eyetest{grid-template-columns:1fr}.et-side{position:static}.et-steps{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+@media(max-width:640px){.container{width:calc(100% - 34px)}section{padding:4rem 0}.products,.cats,.trust,.opt-grid,.form-grid,.footer-grid,.rec-grid,.et-res{grid-template-columns:1fr}.hero{min-height:auto}.hero-grid{padding:7rem 0 5rem}.studio{padding:1.6rem}.gallery3d{height:320px}.editorial-band,.eye-band{min-height:460px}.editorial-band{align-items:flex-start}.dpad{grid-template-columns:repeat(3,58px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.g3d-stage{animation:none}}
+
+/* ==========================================================
+   OLIVE OPTICALS — BLACK & WHITE THEME
+   Applied after the base styles so it overrides them.
+   ========================================================== */
+
+/* 1. Palette: every colour token becomes a neutral */
+:root{
+  --rose:#111111;          /* primary accent  */
+  --rose-deep:#000000;     /* deepest tone    */
+  --rose-mid:#555555;
+  --ivory:#ffffff;         /* page background */
+  --ivory-pure:#ffffff;
+  --blush:#f3f3f3;         /* soft panels     */
+  --ink:#0d0d0d;
+  --stone:#6b6b6b;
+  --gold:#9a9a9a;          /* hairlines & accents */
+  --gold-light:#e6e6e6;    /* accent text on dark */
+  --gold-pale:#eeeeee;
+  --line:rgba(0,0,0,.14);
+  --shadow-sm:0 8px 24px rgba(0,0,0,.07);
+  --shadow:0 26px 70px rgba(0,0,0,.18);
+}
+
+/* 2. Buttons & small components with hard-coded colours */
+.btn-primary:hover{background:#000}
+.btn-gold{background:#fff;color:#000}
+.btn-gold:hover{background:#e6e6e6;filter:none}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-outline{border-color:#111;color:#111}
+.btn-outline:hover{background:#111;color:#fff}
+.badge{background:#eee;color:#222}
+.cart-count{background:#000;color:#fff}
+.stock-dot::before{background:#111}
+.opt.selected{background:#fff;border-color:#fff;color:#000}
+.et-steps li.done i{background:#111;border-color:#111}
+.shape-card.active{box-shadow:0 0 0 3px rgba(0,0,0,.25)}
+input:focus,select:focus,textarea:focus{border-color:#111;box-shadow:0 0 0 4px rgba(0,0,0,.12)}
+.price s{color:#9a9a9a}
+
+/* 3. Section backgrounds (gradients that were burgundy/rose) */
+.hero{background:#0a0a0a}
+.hero::after{background:linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.65))}
+.editorial-band{background:linear-gradient(120deg,#0a0a0a,#555)}
+.editorial-band::after{background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.12) 64%)}
+.eye-band{background:radial-gradient(120% 140% at 80% 50%,#3a3a3a 0%,#121212 55%,#000 100%)}
+.eye-band::after{background:linear-gradient(100deg,rgba(0,0,0,.78),rgba(0,0,0,0) 66%)}
+.shadow-band{background:#000}
+.shadow-band::after{background:linear-gradient(100deg,rgba(0,0,0,.75),rgba(0,0,0,.15))}
+.fx-dark{background:#0a0a0a}
+.studio{background:linear-gradient(140deg,#000,#222 55%,#444)}
+.quiz,.result-card{border-color:rgba(255,255,255,.28)}
+.et-section,#tryon{background:linear-gradient(180deg,#fff,#f3f3f3)!important}
+.camera-wrap{background:#161616}
+.cam-placeholder{background:radial-gradient(circle at 50% 38%,#3a3a3a,#161616);color:#e6e6e6}
+.card-ref{background:linear-gradient(135deg,#dcdcdc,#bdbdbd)}
+.cat-card::after{background:linear-gradient(185deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.82))}
+.g3d-card{border-color:rgba(255,255,255,.4)}
+
+/* 4. Eye-check result pills & alert (neutral, still distinguishable) */
+.pill.ok{background:#e9e9e9;color:#111}
+.pill.watch{background:#cfcfcf;color:#000}
+.pill.see{background:#111;color:#fff}
+.et-alert{background:#f3f3f3;border-left-color:#000;color:#000}
+
+/* 5. Turn photos and WebGL effect canvases greyscale — no JS edits needed */
+img,
+.fx-canvas,
+#waveCanvas,
+#shadowCanvas,
+.shape-card svg,
+.card-ref{filter:grayscale(1) contrast(1.05)}
+
+/* Optional: restore colour on hover for product photos */
+.product-img img,.cat-card img{transition:transform 1s var(--ease),filter .6s var(--ease)}
+.product:hover .product-img img,.cat-card:hover img{filter:grayscale(0)}   /* delete this block for strict B&W */
+
+/* IMPORTANT: keep the colour-vision test plate in real colour.
+   It is a colour test; greyscale would make it meaningless. */
+#etPlate{filter:none!important}
+
+/* ==========================================================
+   SILVER & GOLD ACCENTS (layered on the black & white theme)
+   ========================================================== */
+:root{
+  --gold:#c9a24b;            /* true gold */
+  --gold-light:#ecd9a0;      /* champagne, used on dark sections */
+  --gold-pale:#f6eed8;
+  --silver:#c4c7cc;
+  --silver-deep:#8d9199;
+  --gold-grad:linear-gradient(120deg,#9b7424 0%,#e8cd7a 38%,#fff1bf 50%,#d4af55 62%,#9b7424 100%);
+  --silver-grad:linear-gradient(120deg,#8a8d94 0%,#e9ebee 45%,#ffffff 52%,#b9bcc2 70%,#7e8189 100%);
+  --line:rgba(141,145,153,.38);
+}
+
+/* Bars, header, footer */
+.topbar{background:#000;color:var(--gold-light);border-bottom:1px solid rgba(201,162,75,.55)}
+header{border-bottom:1px solid rgba(201,162,75,.4)}
+footer{background:#000;border-top:2px solid var(--gold)}
+footer h4{color:var(--gold-light)}
+.footer-bottom{border-top-color:rgba(196,199,204,.25)}
+
+/* Logo & headings */
+.logo-mark{background:var(--gold-grad);color:#14100a;box-shadow:0 0 0 2px #000,0 0 0 3px var(--gold)}
+.logo-sub{color:var(--silver-deep)}
+.hero h1 em{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.eyebrow::before{background:var(--gold-grad);height:2px}
+.rule{background:linear-gradient(90deg,var(--gold),var(--silver),transparent);height:2px}
+
+/* Buttons */
+.btn-gold{background:var(--gold-grad);background-size:220% 100%;color:#1a1405;border:1px solid rgba(255,241,191,.6);transition:background-position .6s var(--ease),transform .4s var(--ease)}
+.btn-gold:hover{background-position:100% 0;filter:none;transform:translateY(-2px)}
+.btn-primary{background:#0b0b0b;color:#fff;border:1px solid var(--gold)}
+.btn-primary:hover{background:var(--gold-grad);color:#14100a;border-color:var(--gold)}
+.btn-outline{border-color:var(--silver-deep);color:#111}
+.btn-outline:hover{background:#0b0b0b;border-color:var(--gold);color:var(--gold-light)}
+.btn-ghost{border-color:rgba(236,217,160,.6);color:#fff}
+.btn-ghost:hover{background:rgba(236,217,160,.14)}
+
+/* Small components */
+.badge{background:var(--gold-pale);color:#6b5217;border:1px solid rgba(201,162,75,.45)}
+.cart-count{background:var(--gold-grad);color:#14100a}
+.stock-dot::before{background:var(--gold)}
+.price{color:#111}
+.price s{color:var(--silver-deep)}
+.chip{border-color:var(--silver)}
+.chip.active{background:#0b0b0b;color:var(--gold-light);border-color:var(--gold)}
+.icon-btn{border-color:var(--silver)}
+.icon-btn:hover{background:#0b0b0b;color:var(--gold-light);border-color:var(--gold)}
+.opt.selected{background:var(--gold-grad);border-color:var(--gold);color:#14100a}
+.wish:hover,.wish.active{background:#0b0b0b;color:var(--gold-light)}
+.cat-card:hover .cat-arrow{background:var(--gold-grad);color:#111}
+.nav-links a::after{background:var(--gold-grad);height:2px}
+.shape-card.active{background:#0b0b0b;color:var(--gold-light);border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,75,.35)}
+.shape-card:hover{border-color:var(--gold)}
+.meas span{background:var(--blush);color:#111;border:1px solid var(--silver)}
+.et-steps li.active i{background:#0b0b0b;border-color:var(--gold);color:var(--gold-light)}
+.et-steps li.done i{background:var(--gold-grad);border-color:var(--gold);color:#14100a}
+.et-alert{border-left-color:var(--gold)}
+.pill.ok{background:#eceef0;color:#111;border:1px solid var(--silver)}
+.pill.watch{background:var(--gold-pale);color:#6b5217;border:1px solid rgba(201,162,75,.5)}
+.pill.see{background:#0b0b0b;color:var(--gold-light)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,162,75,.2)}
+:focus-visible{outline-color:var(--gold)}
+
+/* Cards & panels: silver edge, gold on hover */
+.card,.product,.form-card,.camera-card,.shape-panel,.et-side,.et-stage,.rec,.et-res-card{border-color:rgba(141,145,153,.38)}
+.product:hover{box-shadow:0 26px 70px rgba(0,0,0,.18),0 0 0 1px rgba(201,162,75,.55)}
+.studio{border:1px solid rgba(201,162,75,.5)}
+.quiz,.result-card{border-color:rgba(236,217,160,.35)}
+.g3d-card{border-color:rgba(236,217,160,.55)}
+.editorial-band,.eye-band,.shadow-band{border:1px solid rgba(201,162,75,.35)}
+
+/* Assistant & toast */
+.assistant-btn{background:#000;color:var(--gold-light);border:1px solid var(--gold)}
+.assistant-head{background:#000;color:var(--gold-light);border-bottom:1px solid var(--gold)}
+.toast{background:#000;color:var(--gold-light);border:1px solid var(--gold)}
+.msg.user{background:#0b0b0b;color:var(--gold-light)}
+
+/* Animated backgrounds: gold waves + particles, silver everything else */
+#waveCanvas,#particleCanvas.fx-canvas{filter:sepia(1) saturate(2.4) hue-rotate(-14deg) brightness(1.08) contrast(1.05)}
+#butterflyCanvas.fx-canvas,#shadowCanvas,#glassCanvas.fx-canvas{filter:grayscale(1) brightness(1.15) contrast(1.05)}
+
+</style>
+</head>
+<body>
+<div class="topbar">Demo experience · Sample prices, stock & offers · <strong>Book an eye check-up</strong></div>
+<header><div class="container nav">
+<a href="#home" class="logo"><div class="logo-mark">O</div><div><div class="logo-name">Olive Opticals</div><div class="logo-sub">Thally · Tamil Nadu</div></div></a>
+<nav class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#shop" data-filter="all">Eyeglasses</a><a href="#gallery3d">3D Gallery</a><a href="#shop" data-filter="sunglasses">Sunglasses</a><a href="#style-studio">Style Finder</a><a href="#tryon">Face Shape Scan</a><a href="#eye-test">Online Eye Test</a><a href="#booking">Eye Check-Up</a><a href="#about">About</a></nav>
+<div class="nav-actions"><button class="icon-btn" onclick="focusSearch()" aria-label="Search">⌕</button><button class="icon-btn" onclick="openDrawer('wishlistDrawer')" aria-label="Wishlist">♡</button><button class="icon-btn" onclick="openDrawer('cartDrawer')" aria-label="Shopping bag" style="position:relative">▣<span class="cart-count" id="cartCount">0</span></button><button class="icon-btn menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('hidden')" aria-label="Menu">☰</button></div></div></header>
+<main id="home">
+<section class="hero" id="waveHost">
+<canvas id="waveCanvas"></canvas>
+<div class="container hero-grid">
+<div><span class="eyebrow" style="color:var(--gold-light)">Premium Eyewear · Thally</span>
+<h1><span class="line"><span>Your Vision.</span></span><span class="line"><span>Your Style.</span></span><span class="line"><span><em>Your Olive.</em></span></span></h1>
+<p class="hero-copy">Discover eyewear designed around your face, your lifestyle and the way you see the world.</p>
+<div class="hero-cta"><a class="btn btn-gold" href="#shop">Explore Collection</a><a class="btn btn-ghost" href="#tryon">Find Frames For My Face</a></div></div>
+<div class="hero-visual"><div class="hero-frame"><img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=1600&q=85" alt="Model wearing premium eyewear" onerror="this.src='https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1600&q=85'"></div>
+<div class="hero-card"><span class="badge">Olive Experience</span><strong>Personalised frame styling</strong><p>Eye examination appointments and in-store assistance.</p></div></div></div></section>
+
+<!-- Editorial band: Liquid Glass lens floats over the campaign photo -->
+<section id="editorial" style="padding-top:0"><div class="container">
+<div class="editorial-band reveal" id="editorialBand">
+<canvas id="glassCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+<div class="editorial-overlay"><span class="eyebrow" style="color:var(--gold-light)">The Olive Edit</span><h2>Eyewear, composed like couture.</h2><p>Premium frames, considered proportions and a personalised fitting experience.</p><a class="btn btn-gold" href="#shop">View the Collection</a><span class="glass-note">Move your cursor — the glass lens follows.</span></div></div></div></section>
+
+<!-- Eye band: Glowing Particles -->
+<section id="eye-checkup-home" style="padding-top:0"><div class="container">
+<div class="eye-band reveal" id="eyeBand">
+<canvas id="particleCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+<div class="eye-content">
+<span class="eyebrow" style="color:var(--gold-light)">Eye Testing</span>
+<h2>Give Your Eyes the Attention They Deserve</h2>
+<p>Try our quick online eye check from home, or request a routine eye examination, prescription consultation, contact-lens consultation or frame fitting at Olive Opticals, Thally.</p>
+<div class="eye-actions"><a class="btn btn-gold" href="#eye-test">Take the Online Eye Check</a><a class="btn btn-ghost" href="#booking">Book an Eye Check-Up</a></div>
+<p class="muted" style="color:rgba(253,248,244,.6);margin-top:1.4rem">Demo booking request only — no real appointment is saved or confirmed.</p>
+</div></div></div></section>
+
+<section id="shadow-section" style="padding-top:0"><div class="container">
+<div class="shadow-band reveal" id="shadowHost">
+<canvas id="shadowCanvas"></canvas>
+<div class="shadow-content">
+<span class="eyebrow" style="color:var(--gold-light)">The Olive Atelier</span>
+<h2>Light, shadow & exceptional frames.</h2>
+<p>Move your cursor across this space to explore the interplay of light and shadow — a preview of the considered detail behind every Olive frame.</p>
+<a class="btn btn-gold" href="#gallery3d">Watch the 3D Gallery</a>
+</div></div></div></section>
+
+<!-- 3D gallery: Butterfly Drift behind the rotating frames -->
+<section id="gallery3d-sec" class="fx-dark" style="padding-top:0;margin-top:0" aria-label="3D glasses gallery">
+<canvas id="butterflyCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+<div class="fx-vignette"></div>
+<div class="container" style="padding-top:6rem">
+<div class="section-head reveal"><div><span class="eyebrow">3D Glasses Gallery</span><h2>Watch the Collection Rotate</h2><div class="rule"></div></div><p>An interactive 3D-style carousel of demo frames. Move your cursor across the gallery to pause and inspect — and to scatter the butterflies.</p></div>
+<div class="gallery3d reveal" id="gallery3d">
+<div class="g3d-stage" id="g3dStage">
+<div class="g3d-card" style="--i:0"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=800&q=85" alt="Aurora Oval frame" loading="lazy"></div>
+<div class="g3d-card" style="--i:1"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=85" alt="Meridian Square frame" loading="lazy"></div>
+<div class="g3d-card" style="--i:2"><img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=800&q=85" alt="Solstice Round frame" loading="lazy"></div>
+<div class="g3d-card" style="--i:3"><img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=800&q=85" alt="Sable Cat-Eye frame" loading="lazy"></div>
+<div class="g3d-card" style="--i:4"><img src="https://images.unsplash.com/photo-1577741314755-048d8525f8f9?auto=format&fit=crop&w=800&q=85" alt="Focus Blue frame" loading="lazy"></div>
+<div class="g3d-card" style="--i:5"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=85" alt="Readwell Slim frame" loading="lazy"></div>
+</div></div>
+<p class="muted" style="text-align:center;margin-top:1.5rem;padding-bottom:6rem">Demo gallery — images represent sample frames, not real 3D product models.</p></div></section>
+
+<section id="categories"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Curated for every face</span><h2>Shop by Category</h2><div class="rule"></div></div><p>From refined everyday frames to premium sunglasses and practical computer eyewear.</p></div>
+<div class="cats">
+<a class="cat-card reveal" href="#shop" data-filter="eyeglasses"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=85" alt="Men's eyeglasses" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>Men's Eyeglasses</h3></div><div class="cat-arrow">→</div></a>
+<a class="cat-card reveal" href="#shop" data-filter="eyeglasses"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=85" alt="Women's eyeglasses" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>Women's Eyeglasses</h3></div><div class="cat-arrow">→</div></a>
+<a class="cat-card reveal" href="#shop" data-filter="sunglasses"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85" alt="Premium sunglasses" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>Premium Sunglasses</h3></div><div class="cat-arrow">→</div></a>
+<a class="cat-card reveal" href="#shop" data-filter="computer"><img src="https://images.unsplash.com/photo-1577741314755-048d8525f8f9?auto=format&fit=crop&w=1200&q=85" alt="Computer glasses" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>Computer Glasses</h3></div><div class="cat-arrow">→</div></a>
+<a class="cat-card reveal" href="#shop" data-filter="reading"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=85" alt="Reading glasses" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>Reading Glasses</h3></div><div class="cat-arrow">→</div></a>
+<a class="cat-card reveal" href="#shop" data-filter="new"><img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=1200&q=85" alt="New arrivals" loading="lazy" onerror="this.style.display='none'"><div class="cat-body"><h3>New Arrivals</h3></div><div class="cat-arrow">→</div></a></div></div></section>
+
+<section id="style-studio" style="padding-top:0"><div class="container"><div class="studio reveal">
+<div><span class="eyebrow" style="color:var(--gold-light)">Olive AI Style Studio</span><h2>Find Your Perfect Frames</h2>
+<p>Answer three quick questions to receive styling suggestions from our demo catalogue.</p></div>
+<div class="quiz">
+<div class="quiz-step active" data-step="1"><span class="eyebrow" style="color:var(--gold-light)">Question 1 of 3</span><h3>What is your face shape?</h3><div class="opt-grid"><button class="opt" data-face="oval">Oval</button><button class="opt" data-face="round">Round</button><button class="opt" data-face="square">Square</button><button class="opt" data-face="heart">Heart-shaped</button><button class="opt" data-face="oblong">Oblong</button><button class="opt" data-face="unsure">Not sure</button></div></div>
+<div class="quiz-step" data-step="2"><span class="eyebrow" style="color:var(--gold-light)">Question 2 of 3</span><h3>What is your preferred style?</h3><div class="opt-grid"><button class="opt" data-style="minimal">Minimalist</button><button class="opt" data-style="classic">Classic</button><button class="opt" data-style="bold">Statement</button><button class="opt" data-style="lightweight">Lightweight</button></div></div>
+<div class="quiz-step" data-step="3"><span class="eyebrow" style="color:var(--gold-light)">Question 3 of 3</span><h3>What is your budget?</h3><div class="opt-grid"><button class="opt" data-budget="under">Under ₹3,000</button><button class="opt" data-budget="mid">₹3,000–₹8,000</button><button class="opt" data-budget="premium">Above ₹8,000</button><button class="opt" data-budget="any">Any budget</button></div></div>
+<div class="quiz-step" data-step="4"><span class="eyebrow" style="color:var(--gold-light)">Your recommendations</span><h3>Frames selected for you</h3><div id="quizResult"></div><button class="btn btn-gold btn-sm" style="margin-top:1.3rem" onclick="restartQuiz()">Start again</button></div></div></div></div></section>
+
+<section id="shop"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">The Collection</span><h2>Eyewear Catalogue</h2><div class="rule"></div></div><p>Demo catalogue with sample SKUs, prices and stock.</p></div>
+<div class="toolbar"><div class="search"><input id="searchInput" placeholder="Search frames, brands, shapes or styles…" oninput="renderProducts()"></div>
+<div class="filters" id="filterChips"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="eyeglasses">Eyeglasses</button><button class="chip" data-filter="sunglasses">Sunglasses</button><button class="chip" data-filter="computer">Computer</button><button class="chip" data-filter="reading">Reading</button><button class="chip" data-filter="new">New</button></div></div>
+<div class="products" id="productGrid"></div></div></section>
+
+<!-- LIVE FACE-SHAPE DETECTION -->
+<section id="tryon" style="background:linear-gradient(180deg,var(--blush),var(--ivory))"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Live face analysis</span><h2>Detect Your Face Shape</h2><div class="rule"></div></div><p>Look straight at the camera. We detect your face, work out your face shape and recommend the frames that suit it best.</p></div>
+<div class="scan">
+<div class="camera-card reveal">
+<div class="camera-wrap" id="camWrap"><div class="cam-placeholder"><svg viewBox="0 0 120 150" fill="none" stroke="#e8c9a8" stroke-width="2.5" stroke-linecap="round"><ellipse cx="60" cy="62" rx="34" ry="46" stroke-dasharray="6 6"/><path d="M12 150Q14 118 42 112L60 124L78 112Q106 118 108 150" opacity=".7"/><path d="M45 56Q60 50 75 56M50 82Q60 90 70 82" opacity=".6"/><circle cx="49" cy="64" r="2.5" fill="#e8c9a8" stroke="none"/><circle cx="71" cy="64" r="2.5" fill="#e8c9a8" stroke="none"/></svg><span>Align your face inside the oval</span></div><video id="cam" autoplay muted playsinline></video><img id="photoEl" alt="Uploaded photo for face analysis"><canvas id="camCanvas"></canvas><div class="scan-status" id="scanStatus">Camera is off</div></div>
+<div class="camera-controls">
+<button class="btn btn-primary btn-sm" id="scanStart" onclick="startScan()">Start Camera</button>
+<button class="btn btn-gold btn-sm" id="scanBtn" onclick="captureShape()" disabled>Detect Face Shape</button>
+<button class="btn btn-outline btn-sm" onclick="stopCamera()">Stop</button>
+<button class="btn btn-outline btn-sm" onclick="document.getElementById('photoInput').click()">Upload Photo</button>
+<input type="file" id="photoInput" accept="image/*" class="hidden" onchange="analysePhoto(this.files[0]);this.value=''">
+<button class="btn btn-gold btn-sm" onclick="document.getElementById('selfieInput').click()">Take Photo</button>
+<input type="file" id="selfieInput" accept="image/*" capture="user" class="hidden" onchange="analysePhoto(this.files[0]);this.value=''"></div>
+<p class="muted" style="margin-top:1rem;font-size:.78rem">Tips: good front lighting, hair away from your forehead and jawline, neutral expression, look straight ahead. Analysis runs entirely in your browser — no photo or video is uploaded or stored.</p></div>
+<div class="shape-panel reveal" id="shapePanel"></div>
+</div></div></section>
+
+<!-- ONLINE EYE CHECK (new) -->
+<section id="eye-test" class="et-section"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Online eye check</span><h2>Check Your Vision From Home</h2><div class="rule"></div></div><p>A five-minute screening: distance vision for each eye, colour vision, astigmatism and the Amsler grid. It runs in your browser and nothing is uploaded or stored.</p></div>
+<div class="eyetest">
+<aside class="et-side reveal"><h3 class="serif">Your screening</h3><ol class="et-steps" id="etSteps"></ol>
+<p class="muted" style="font-size:.78rem">This is a screening aid, not a diagnosis and not a replacement for an eye examination. Wear your usual glasses or contact lenses if you have them.</p></aside>
+<div class="et-stage reveal" id="etStage"></div>
+</div></div></section>
+
+<section id="booking"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Eye care</span><h2>Give Your Eyes the Attention They Deserve</h2><div class="rule"></div></div><p>Request an appointment for an eye examination or optical consultation.</p></div>
+<div class="booking-grid">
+<form class="form-card reveal" id="bookingForm" onsubmit="submitBooking(event)">
+<div class="form-grid">
+<div><label for="bName">Full name *</label><input id="bName" required></div>
+<div><label for="bPhone">Mobile number *</label><input id="bPhone" type="tel" required></div>
+<div><label for="bEmail">Email (optional)</label><input id="bEmail" type="email"></div>
+<div><label for="bDate">Preferred date *</label><input id="bDate" type="date" required></div>
+<div><label for="bTime">Preferred time *</label><select id="bTime" required><option value="">Select a time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>04:00 PM</option><option>05:00 PM</option><option>06:00 PM</option></select></div>
+<div><label for="bType">Type of visit *</label><select id="bType" required><option>Routine eye examination</option><option>Prescription consultation</option><option>Contact lens consultation</option><option>Frame fitting</option><option>Lens replacement enquiry</option></select></div></div>
+<div style="margin-top:1.1rem"><label for="bNotes">Notes (optional)</label><textarea id="bNotes" rows="3"></textarea></div>
+<label class="consent"><input type="checkbox" required> I consent to Olive Opticals contacting me about this appointment request.</label>
+<button class="btn btn-primary" style="margin-top:1.4rem">Request Appointment</button>
+<p class="muted" style="margin-top:1rem">Demo form: no appointment is saved or confirmed in a real system.</p></form>
+<div class="card reveal"><span class="eyebrow">Visit us</span><h3 class="serif" style="font-size:1.9rem;margin:.8rem 0 .6rem">Olive Opticals, Thally</h3><p class="muted">Thally, Tamil Nadu, India</p>
+<div style="margin-top:1.4rem;display:grid;gap:.9rem">
+<div><strong style="font-weight:500">Store hours</strong><br><span class="muted">Monday–Saturday: 10:00 AM – 8:00 PM</span></div>
+<div><strong style="font-weight:500">Contact</strong><br><span class="muted">Phone & WhatsApp: <a href="https://wa.me/910000000000" target="_blank" rel="noopener" style="color:var(--rose)">+91 00000 00000</a></span></div></div>
+<a class="btn btn-outline btn-sm" style="margin-top:1.4rem" href="https://www.google.com/maps/search/?api=1&query=Thally%2C+Tamil+Nadu" target="_blank" rel="noopener">Get Directions</a></div></div></div></section>
+
+<section id="about"><div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">The Olive experience</span><h2>Better Vision Starts Here</h2><div class="rule"></div></div><p>Olive Opticals brings considered design, quality eyewear and personal eye-care service to Thally.</p></div>
+<div class="trust">
+<div class="card reveal"><span class="badge">Service</span><h3>Eye Examination Appointments</h3><p class="muted">Request a professional eye examination.</p></div>
+<div class="card reveal"><span class="badge">Service</span><h3>Frame Styling & Fitting</h3><p class="muted">Receive help choosing frames.</p></div>
+<div class="card reveal"><span class="badge">Service</span><h3>Lens Guidance</h3><p class="muted">Understand lens options accurately.</p></div>
+<div class="card reveal"><span class="badge">Trust</span><h3>Genuine Products</h3><p class="muted">Transparent product information.</p></div>
+<div class="card reveal"><span class="badge">Trust</span><h3>Clear Policies</h3><p class="muted">Publish policies only after confirmation.</p></div>
+<div class="card reveal"><span class="badge">Care</span><h3>Eyewear Care</h3><p class="muted">Use a microfibre cloth and protective case.</p></div></div></div></section>
+</main>
+<footer><div class="container"><div class="footer-grid">
+<div><div class="logo" style="margin-bottom:1.2rem"><div class="logo-mark">O</div><div><div class="logo-name" style="color:var(--ivory)">Olive Opticals</div><div class="logo-sub" style="color:rgba(253,248,244,.55)">Thally · Tamil Nadu</div></div></div>
+<p style="max-width:32rem">Premium eyewear, personalised styling and attentive eye care for Thally.</p>
+<a class="btn btn-gold btn-sm" style="margin-top:1.4rem" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp Us</a></div>
+<div><h4>Shop</h4><div class="footer-links"><a href="#shop" data-filter="all">All Eyewear</a><a href="#shop" data-filter="sunglasses">Sunglasses</a><a href="#shop" data-filter="new">New Arrivals</a><a href="#offers">Offers</a></div></div>
+<div><h4>Experience</h4><div class="footer-links"><a href="#gallery3d">3D Gallery</a><a href="#style-studio">AI Style Studio</a><a href="#tryon">Face Shape Scan</a><a href="#eye-test">Online Eye Test</a><a href="#booking">Book Eye Check-Up</a></div></div>
+<div><h4>Visit & Contact</h4><p>Thally, Tamil Nadu, India<br>Phone / WhatsApp: +91 00000 00000<br>Mon–Sat: 10 AM–8 PM</p></div></div>
+<div class="footer-bottom"><span>© 2026 Olive Opticals · Demo website — sample data only</span><span>Privacy · Returns · Terms · FAQs</span></div></div></footer>
+<div class="drawer" id="cartDrawer"><div class="drawer-backdrop" onclick="closeDrawers()"></div><aside class="drawer-panel">
+<div class="drawer-head"><h3 class="serif" style="font-size:1.7rem">Shopping Bag</h3><button class="icon-btn" onclick="closeDrawers()">✕</button></div>
+<div id="cartItems"></div>
+<div style="margin-top:1.4rem;display:flex;justify-content:space-between;font-family:var(--serif);font-size:1.25rem"><span>Subtotal</span><span id="cartTotal">₹0</span></div>
+<button class="btn btn-primary" style="width:100%;margin-top:1.2rem" onclick="checkoutDemo()">Proceed to Checkout</button></aside></div>
+<div class="drawer" id="wishlistDrawer"><div class="drawer-backdrop" onclick="closeDrawers()"></div><aside class="drawer-panel">
+<div class="drawer-head"><h3 class="serif" style="font-size:1.7rem">Wishlist</h3><button class="icon-btn" onclick="closeDrawers()">✕</button></div>
+<div id="wishlistItems"></div></aside></div>
+<div class="modal" id="productModal"><div class="modal-box"><div class="detail-grid" id="detailContent"></div></div></div>
+<button class="assistant-btn" onclick="toggleAssistant()">✦ Olive AI</button>
+<div class="assistant" id="assistant">
+<div class="assistant-head"><div><strong style="font-family:var(--serif);font-size:1.2rem">Olive AI</strong></div><button onclick="toggleAssistant()" style="color:inherit">✕</button></div>
+<div class="assistant-log" id="chatLog"></div>
+<form class="assistant-input" onsubmit="sendChat(event)"><input id="chatInput" placeholder="Ask about frames, budget or appointments…"><button class="btn btn-primary btn-sm">Send</button></form></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* Global flag: background WebGL animations pause while the camera is scanning,
+   so they don't starve the face-detection loop. */
+var pauseFX=false;
+
+/* Shared helpers for the WebGL effects */
+function watchVisible(el){const s={v:true};if('IntersectionObserver' in window)new IntersectionObserver(es=>es.forEach(e=>s.v=e.isIntersecting),{rootMargin:'150px'}).observe(el);return s}
+function makeProg(gl,vs,fs,name){
+ function sh(t,src){const o=gl.createShader(t);gl.shaderSource(o,src);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS)){console.warn((name||'shader')+':',gl.getShaderInfoLog(o));gl.deleteShader(o);return null}return o}
+ const v=sh(gl.VERTEX_SHADER,vs),f=sh(gl.FRAGMENT_SHADER,fs);if(!v||!f)return null;
+ const p=gl.createProgram();gl.attachShader(p,v);gl.attachShader(p,f);gl.linkProgram(p);
+ if(!gl.getProgramParameter(p,gl.LINK_STATUS)){console.warn((name||'program')+' link:',gl.getProgramInfoLog(p));return null}return p}
+const FX_HEX=c=>{c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return[parseInt(c.slice(0,2),16)/255,parseInt(c.slice(2,4),16)/255,parseInt(c.slice(4,6),16)/255]};
+
+/* =========================================================
+   Liquid Glass (Originkit Glass Icon) — vanilla WebGL port
+   A refractive glass torus floating over the campaign photo.
+   ========================================================= */
+(function(){
+const host=document.getElementById('editorialBand'),canvas=document.getElementById('glassCanvas');if(!host||!canvas)return;
+const gl=canvas.getContext('webgl',{antialias:false,alpha:true,premultipliedAlpha:true});if(!gl)return;
+const vis=watchVisible(host);
+const SHAPE="Torus",DEPTH=32,SIZE=62,SPEED=60,CHROMATIC=25,FROST=35,TINT="#ffffff",OFFSET_X=27;
+const DEG=Math.PI/180,FOV=45*DEG,CAM=5,BEVEL=.025,IMG_URL='https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=1800&q=80';
+const VS='attribute vec2 aPos;void main(){gl_Position=vec4(aPos,0.,1.);}';
+const PLATE_FS=`precision mediump float;uniform sampler2D uPlate;uniform vec2 uPlateFit,uRes;void main(){vec2 uv=(gl_FragCoord.xy/uRes-.5)*uPlateFit+.5;gl_FragColor=texture2D(uPlate,clamp(uv,0.,1.));}`;
+const GLASS_FS=`
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec2 uRes;uniform float uAspect,uTanHalf;
+uniform sampler2D uPlate;uniform vec2 uPlateFit;uniform float uHasPlate;
+uniform sampler2D uEnv;
+uniform mat3 uRot,uRotT;uniform vec3 uCenter;uniform float uScale,uBoundR;
+uniform float uShape,uHalfDepth,uBevel,uTorusTube;
+uniform float uDisp,uFrost;uniform vec3 uTint;
+const float PI=3.14159265359,CORE_REFRACT=1.0,IOR=1.5,THICKNESS=2.0;
+float sdCross(vec2 p,vec2 b){p=abs(p);p=(p.y>p.x)?p.yx:p.xy;vec2 q=p-b;float k=max(q.y,q.x);vec2 w=(k>0.0)?q:vec2(b.y-p.x,-k);return sign(k)*length(max(w,0.0));}
+vec2 r45(vec2 p){const float c=0.7071067811865476;return vec2((p.x+p.y)*c,(p.y-p.x)*c);}
+float extrudeRound(float d2,float pz,float hd,float r){vec2 q=vec2(d2+r,abs(pz)-hd+r);return min(max(q.x,q.y),0.0)+length(max(q,0.0))-r;}
+float map(vec3 p){
+ if(uShape<0.5)return extrudeRound(sdCross(r45(p.xy),vec2(1.3,0.35)),p.z,uHalfDepth,uBevel);
+ else if(uShape<1.5){vec2 q=vec2(length(p.xy)-0.8,p.z);return length(q)-uTorusTube;}
+ return length(p)-1.2;}
+vec3 mapNormal(vec3 p){const float e=0.0015;vec2 k=vec2(1.0,-1.0);return normalize(k.xyy*map(p+k.xyy*e)+k.yyx*map(p+k.yyx*e)+k.yxy*map(p+k.yxy*e)+k.xxx*map(p+k.xxx*e));}
+vec4 plate(vec2 su){if(uHasPlate<0.5)return vec4(0.0);vec2 uv=(su-0.5)*uPlateFit+0.5;return texture2D(uPlate,clamp(uv,0.0,1.0));}
+float rand(vec2 co){return fract(sin(dot(co.xy,vec2(12.9898,78.233)))*43758.5453);}
+void main(){
+ vec2 screenUv=gl_FragCoord.xy/uRes;vec2 ndc=screenUv*2.0-1.0;
+ vec3 D=normalize(vec3(ndc.x*uTanHalf*uAspect,ndc.y*uTanHalf,-1.0));
+ vec3 rd=normalize(uRotT*D);vec3 ro=(uRotT*-uCenter)/uScale;
+ float bb=dot(ro,rd);float cc=dot(ro,ro)-uBoundR*uBoundR;float hh=bb*bb-cc;
+ if(hh<0.0)discard;hh=sqrt(hh);float t=max(-bb-hh,0.0);float tMax=-bb+hh;
+ bool hit=false;
+ for(int i=0;i<80;i++){if(t>tMax)break;float d=map(ro+rd*t);if(d<0.0009){hit=true;break;}t+=d*0.9;}
+ if(!hit)discard;
+ vec3 pObj=ro+rd*t;vec3 nObj=mapNormal(pObj);
+ vec3 vP=uCenter+uScale*(uRot*pObj);vec3 normal=normalize(uRot*nObj);vec3 viewDir=normalize(-vP);
+ float fresnel=pow(1.0-max(dot(normal,viewDir),0.0),4.0);
+ float coreFactor=pow(max(dot(normal,viewDir),0.0),2.0);
+ vec2 lensOffset=(screenUv-0.5)*(CORE_REFRACT*0.15)*coreFactor;
+ vec3 refractView=refract(-viewDir,normal,1.0/IOR);
+ vec2 offset=refractView.xy*(THICKNESS*0.1)-lensOffset;
+ vec3 reflectDir=reflect(-viewDir,normal);
+ vec2 eq=vec2(atan(reflectDir.z,reflectDir.x)/(2.0*PI)+0.5,asin(clamp(reflectDir.y,-1.0,1.0))/PI+0.5);
+ vec3 reflection=texture2D(uEnv,eq).rgb*2.5;
+ vec3 transmission=vec3(0.0);float bgAlpha=0.0;
+ vec2 uvR=screenUv+offset*(1.0+uDisp);vec2 uvG=screenUv+offset;vec2 uvB=screenUv+offset*(1.0-uDisp);
+ if(uFrost>0.001){
+  float rnd=rand(screenUv)*6.2831853;const int SAMPLES=24;const float GA=2.39996323;
+  float radius=0.0;float rs=1.0/float(SAMPLES);float bm=uFrost*0.025;
+  for(int i=0;i<SAMPLES;i++){float th=float(i)*GA+rnd;radius+=rs;vec2 bo=vec2(cos(th),sin(th))*radius*bm;
+   transmission.r+=plate(uvR+bo).r;vec4 g=plate(uvG+bo);transmission.g+=g.g;bgAlpha+=g.a;transmission.b+=plate(uvB+bo).b;}
+  transmission/=float(SAMPLES);bgAlpha/=float(SAMPLES);
+ }else{transmission.r=plate(uvR).r;vec4 g=plate(uvG);transmission.g=g.g;bgAlpha=g.a;transmission.b=plate(uvB).b;}
+ transmission*=uTint;
+ vec3 clearGlassTint=mix(uTint,reflection,0.5);
+ transmission=mix(clearGlassTint,transmission,bgAlpha);
+ vec3 finalColor=mix(transmission,reflection,fresnel*0.8);
+ float baseAlpha=max(0.25,fresnel*0.85);float outAlpha=mix(baseAlpha,1.0,bgAlpha);
+ gl_FragColor=vec4(finalColor,outAlpha);}`;
+const plateProg=makeProg(gl,VS,PLATE_FS,'glass plate'),glassProg=makeProg(gl,VS,GLASS_FS,'glass');if(!plateProg||!glassProg)return;
+const UL=(p,n)=>gl.getUniformLocation(p,n);
+const up={plate:UL(plateProg,'uPlate'),fit:UL(plateProg,'uPlateFit'),res:UL(plateProg,'uRes')};
+const names=['uRes','uAspect','uTanHalf','uPlate','uPlateFit','uHasPlate','uEnv','uRot','uRotT','uCenter','uScale','uBoundR','uShape','uHalfDepth','uBevel','uTorusTube','uDisp','uFrost','uTint'];
+const u={};names.forEach(n=>u[n]=UL(glassProg,n));
+const aP=gl.getAttribLocation(plateProg,'aPos'),aG=gl.getAttribLocation(glassProg,'aPos');
+const quad=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,quad);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+function makeTex(wrap){const t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,wrap);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,0,0,0]));return t}
+const plateTex=makeTex(gl.CLAMP_TO_EDGE),envTex=makeTex(gl.REPEAT);
+/* Studio-softbox environment that the glass reflects */
+(function(){const c=document.createElement('canvas');c.width=1024;c.height=512;const x=c.getContext('2d');x.fillStyle='#1a1a1a';x.fillRect(0,0,1024,512);
+ const box=(px,py,w,h,k)=>{const g=x.createLinearGradient(px,py,px,py+h);g.addColorStop(0,`rgba(255,255,255,${k})`);g.addColorStop(1,`rgba(50,50,50,${k*.2})`);x.fillStyle=g;x.shadowColor='#fff';x.shadowBlur=80;x.beginPath();if(x.roundRect)x.roundRect(px,py,w,h,60);else x.rect(px,py,w,h);x.fill()};
+ box(50,100,300,312,1);box(674,100,300,312,1);box(350,-50,324,150,.9);
+ gl.bindTexture(gl.TEXTURE_2D,envTex);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,0);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,c)})();
+let plateReady=false,plateAspect=2;
+function uploadPlate(src,asp){plateAspect=asp;gl.bindTexture(gl.TEXTURE_2D,plateTex);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,1);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,src);plateReady=true}
+function bakeFallback(){const c=document.createElement('canvas');c.width=1024;c.height=512;const x=c.getContext('2d');const g=x.createLinearGradient(0,0,1024,512);g.addColorStop(0,'#4a1f2d');g.addColorStop(.55,'#a4556b');g.addColorStop(1,'#e8c9a8');x.fillStyle=g;x.fillRect(0,0,1024,512);x.fillStyle='rgba(253,248,244,.9)';x.font='600 190px Jost,system-ui,sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText('OLIVE',512,256);uploadPlate(c,2)}
+const img=new Image();img.crossOrigin='anonymous';img.onload=()=>{try{uploadPlate(img,img.width/Math.max(img.height,1))}catch(e){bakeFallback()}};img.onerror=bakeFallback;img.src=IMG_URL;
+let vw=1,vh=1;
+function resize(){const dpr=Math.min(devicePixelRatio||1,1.5),w=Math.max(1,Math.round((canvas.clientWidth||host.clientWidth||1)*dpr)),h=Math.max(1,Math.round((canvas.clientHeight||host.clientHeight||1)*dpr));if(w===vw&&h===vh)return;vw=w;vh=h;canvas.width=w;canvas.height=h}
+new ResizeObserver(resize).observe(host);resize();
+const cl=(v,a,b)=>Math.max(a,Math.min(b,v));
+let tiltX=0,tiltY=0,tgX=0,tgY=0,yawBase=0,elapsed=0,prev=performance.now();
+addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();tgX=cl(((e.clientX-r.left)/Math.max(r.width,1))*2-1,-1,1)*.5;tgY=cl(-((e.clientY-r.top)/Math.max(r.height,1))*2+1,-1,1)*.5});
+function rotYXZ(yaw,pitch){const cy=Math.cos(yaw),sy=Math.sin(yaw),cx=Math.cos(pitch),sx=Math.sin(pitch);return new Float32Array([cy,0,-sy,sy*sx,cx,cy*sx,sy*cx,-sx,cy*cx])}
+function transpose3(m){return new Float32Array([m[0],m[3],m[6],m[1],m[4],m[7],m[2],m[5],m[8]])}
+gl.disable(gl.DEPTH_TEST);gl.enable(gl.BLEND);gl.blendFuncSeparate(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA,gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.clearColor(0,0,0,0);
+const tint=FX_HEX(TINT);
+function frame(now){
+ requestAnimationFrame(frame);const dt=Math.min((now-prev)/1000,.05);prev=now;
+ if(pauseFX||!vis.v||!plateReady)return;
+ elapsed+=dt;const k=1-Math.exp(-5*dt);tiltX+=(tgX-tiltX)*k;tiltY+=(tgY-tiltY)*k;
+ yawBase+=(SPEED/50)*.5*dt;
+ const rot=rotYXZ(yawBase+tiltX,.35*Math.sin(elapsed*.4)-tiltY),rotT=transpose3(rot);
+ const halfFrame=CAM*Math.tan(FOV/2),targetHalf=Math.max(.02,SIZE/100)*halfFrame,aspect=vw/vh;
+ const nd=Math.max(0,DEPTH/100),tube=Math.max(.02,nd*.5);
+ let shapeId=1,refHalf=.8+tube,boundR=.8+tube,halfDepth=nd*.5;
+ if(SHAPE==="X"){shapeId=0;refHalf=1.3;boundR=Math.hypot(1.3,.35)+halfDepth+BEVEL}else if(SHAPE==="Sphere"){shapeId=2;refHalf=1.2;boundR=1.2}
+ const scale=targetHalf/refHalf,floatY=Math.sin(elapsed*2)*.05;
+ const fitX=aspect>plateAspect?1:aspect/plateAspect,fitY=aspect>plateAspect?plateAspect/aspect:1;
+ const ox=aspect>1.4?OFFSET_X:0,oy=aspect>1.4?0:-18;
+ gl.viewport(0,0,vw,vh);gl.clear(gl.COLOR_BUFFER_BIT);gl.bindBuffer(gl.ARRAY_BUFFER,quad);
+ gl.useProgram(plateProg);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,plateTex);gl.uniform1i(up.plate,0);gl.uniform2f(up.fit,fitX,fitY);gl.uniform2f(up.res,vw,vh);gl.enableVertexAttribArray(aP);gl.vertexAttribPointer(aP,2,gl.FLOAT,false,0,0);gl.drawArrays(gl.TRIANGLES,0,3);
+ gl.useProgram(glassProg);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,plateTex);gl.uniform1i(u.uPlate,0);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,envTex);gl.uniform1i(u.uEnv,1);
+ gl.uniform2f(u.uRes,vw,vh);gl.uniform1f(u.uAspect,aspect);gl.uniform1f(u.uTanHalf,Math.tan(FOV/2));gl.uniform2f(u.uPlateFit,fitX,fitY);gl.uniform1f(u.uHasPlate,1);
+ gl.uniformMatrix3fv(u.uRot,false,rot);gl.uniformMatrix3fv(u.uRotT,false,rotT);
+ gl.uniform3f(u.uCenter,(ox/100)*halfFrame*aspect,floatY+(oy/100)*halfFrame,-CAM);
+ gl.uniform1f(u.uScale,scale);gl.uniform1f(u.uBoundR,boundR);gl.uniform1f(u.uShape,shapeId);gl.uniform1f(u.uHalfDepth,halfDepth);gl.uniform1f(u.uBevel,BEVEL);gl.uniform1f(u.uTorusTube,tube);
+ gl.uniform1f(u.uDisp,CHROMATIC/1000);gl.uniform1f(u.uFrost,FROST/100);gl.uniform3f(u.uTint,tint[0],tint[1],tint[2]);
+ gl.enableVertexAttribArray(aG);gl.vertexAttribPointer(aG,2,gl.FLOAT,false,0,0);gl.drawArrays(gl.TRIANGLES,0,3)}
+requestAnimationFrame(frame)})();
+
+/* =========================================================
+   Glowing Particles (Originkit) — vanilla WebGL port
+   Radial particle burst behind the eye-testing band.
+   ========================================================= */
+(function(){
+const host=document.getElementById('eyeBand'),canvas=document.getElementById('particleCanvas');if(!host||!canvas)return;
+const gl=canvas.getContext('webgl',{antialias:false,alpha:true,premultipliedAlpha:true});if(!gl)return;
+const vis=watchVisible(host);
+const PERSPECTIVE=.15,REACH=2.7,DENSITY=14,STREAK=8,SPEED=.6,SIZE=4,RIM=1,HAZE=.55,SPIN=.5,SIZE_PCT=90;
+const COLOR=FX_HEX('#e8c9a8'),HOT=FX_HEX('#ffffff');
+const rays=Math.round(50+DENSITY*DENSITY*7),perRay=Math.round(1+STREAK*1.7),ptSize=1.2+SIZE*1.4;
+const PV=`attribute vec3 aDir;attribute float aOffset,aSeed;
+uniform float uTime,uSpeed,uRadius,uSize,uRim,uPR,uTanHalf,uAspect,uDist;uniform vec2 uOff;uniform mat3 uRot;
+varying float vLife,vBright;
+void main(){float t=fract(aOffset+uTime*uSpeed*(.65+aSeed*.7));float life=mix(aSeed,1.,uRim);float r=uRadius*life*(1.-pow(1.-t,3.));
+vec3 p=uRot*(aDir*r);float depth=uDist-p.z;
+gl_Position=vec4(p.x/(depth*uTanHalf*uAspect)+uOff.x,p.y/(depth*uTanHalf)+uOff.y,0.,1.);
+gl_PointSize=uSize*(1.-t*.45)*uPR*(10./max(.001,depth));
+float birth=smoothstep(0.,.05,t);float death=1.-smoothstep(.82,1.,t);float flick=.5+.5*sin(uTime*9.+aSeed*43.+aOffset*61.);
+vBright=birth*death*flick;vLife=t;}`;
+const PF=`precision mediump float;uniform vec3 uColor,uHot;varying float vLife,vBright;
+void main(){float d=length(gl_PointCoord-.5)*2.;if(d>1.)discard;float fall=1.-d;float shape=pow(fall,5.)+pow(fall,1.6)*.3;
+vec3 col=mix(uHot,uColor,smoothstep(0.,.55,vLife));float a=shape*vBright;gl_FragColor=vec4(col*a,a);}`;
+const HV=`attribute vec2 aPos;uniform vec2 uHalf,uOff;varying vec2 vUv;void main(){vUv=aPos*.5+.5;gl_Position=vec4(aPos*uHalf+uOff,0.,1.);}`;
+const HF=`precision mediump float;uniform vec3 uColor;uniform float uHaze;varying vec2 vUv;
+void main(){float d=length(vUv-.5)*2.;if(d>1.)discard;float h=pow(1.-d,1.5);float a=clamp(h*uHaze,0.,1.);gl_FragColor=vec4(uColor*a,a);}`;
+const pp=makeProg(gl,PV,PF,'particles'),hp=makeProg(gl,HV,HF,'haze');if(!pp||!hp)return;
+/* Build the cloud: points on a golden-spiral sphere, each ray carries several particles */
+const count=rays*perRay,dir=new Float32Array(count*3),off=new Float32Array(count),seed=new Float32Array(count),golden=Math.PI*(3-Math.sqrt(5));
+let n=0;for(let r=0;r<rays;r++){const y=1-(r/Math.max(1,rays-1))*2,ring=Math.sqrt(Math.max(0,1-y*y)),th=golden*r;
+ let dx=Math.cos(th)*ring+(Math.random()-.5)*.1,dy=y+(Math.random()-.5)*.1,dz=Math.sin(th)*ring+(Math.random()-.5)*.1;const len=Math.hypot(dx,dy,dz)||1;dx/=len;dy/=len;dz/=len;
+ const life=.6+Math.random()*.4,phase=Math.random();
+ for(let p=0;p<perRay;p++){dir[n*3]=dx;dir[n*3+1]=dy;dir[n*3+2]=dz;off[n]=phase+(p/perRay)*.2;seed[n]=life;n++}}
+function buf(data){const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);return b}
+const bDir=buf(dir),bOff=buf(off),bSeed=buf(seed),bQuad=buf(new Float32Array([-1,-1,1,-1,-1,1,1,1]));
+const UL=(p,nm)=>gl.getUniformLocation(p,nm);
+const U={};['uTime','uSpeed','uRadius','uSize','uRim','uPR','uTanHalf','uAspect','uDist','uOff','uRot','uColor','uHot'].forEach(k=>U[k]=UL(pp,k));
+const H={half:UL(hp,'uHalf'),off:UL(hp,'uOff'),color:UL(hp,'uColor'),haze:UL(hp,'uHaze')};
+const aDir=gl.getAttribLocation(pp,'aDir'),aOff=gl.getAttribLocation(pp,'aOffset'),aSeed=gl.getAttribLocation(pp,'aSeed'),aHp=gl.getAttribLocation(hp,'aPos');
+gl.disable(gl.DEPTH_TEST);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE);gl.clearColor(0,0,0,0);
+let vw=1,vh=1,dpr=1;
+function resize(){dpr=Math.min(devicePixelRatio||1,2);const w=Math.max(1,Math.round((canvas.clientWidth||1)*dpr)),h=Math.max(1,Math.round((canvas.clientHeight||1)*dpr));if(w===vw&&h===vh)return;vw=w;vh=h;canvas.width=w;canvas.height=h}
+new ResizeObserver(resize).observe(host);resize();
+const DIST=1/PERSPECTIVE;let time=0,spin=0,last=performance.now();
+function frame(now){
+ requestAnimationFrame(frame);const dt=Math.min((now-last)/1000,.05);last=now;if(pauseFX||!vis.v)return;
+ time+=dt;spin+=SPIN*dt;
+ const aspect=vw/vh,span=7.4*(100/SIZE_PCT),visH=aspect<1?span/aspect:span,tanHalf=visH/2/DIST;
+ const ax=Math.sin(spin*.6)*.35,ay=spin,cx=Math.cos(ax),sx=Math.sin(ax),cy=Math.cos(ay),sy=Math.sin(ay);
+ const rot=new Float32Array([cy,sx*sy,-cx*sy,0,cx,sx,sy,-sx*cy,cx*cy]);
+ const ox=aspect>1.4?.42:0;
+ gl.viewport(0,0,vw,vh);gl.clear(gl.COLOR_BUFFER_BIT);
+ gl.useProgram(hp);gl.bindBuffer(gl.ARRAY_BUFFER,bQuad);gl.enableVertexAttribArray(aHp);gl.vertexAttribPointer(aHp,2,gl.FLOAT,false,0,0);
+ gl.uniform2f(H.half,REACH*1.3/(DIST*tanHalf*aspect),REACH*1.3/(DIST*tanHalf));gl.uniform2f(H.off,ox,0);gl.uniform3f(H.color,COLOR[0],COLOR[1],COLOR[2]);gl.uniform1f(H.haze,HAZE);
+ gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+ gl.disableVertexAttribArray(aHp);
+ gl.useProgram(pp);
+ gl.bindBuffer(gl.ARRAY_BUFFER,bDir);gl.enableVertexAttribArray(aDir);gl.vertexAttribPointer(aDir,3,gl.FLOAT,false,0,0);
+ gl.bindBuffer(gl.ARRAY_BUFFER,bOff);gl.enableVertexAttribArray(aOff);gl.vertexAttribPointer(aOff,1,gl.FLOAT,false,0,0);
+ gl.bindBuffer(gl.ARRAY_BUFFER,bSeed);gl.enableVertexAttribArray(aSeed);gl.vertexAttribPointer(aSeed,1,gl.FLOAT,false,0,0);
+ gl.uniform1f(U.uTime,time);gl.uniform1f(U.uSpeed,SPEED);gl.uniform1f(U.uRadius,REACH);gl.uniform1f(U.uSize,ptSize);gl.uniform1f(U.uRim,RIM);gl.uniform1f(U.uPR,dpr);
+ gl.uniform1f(U.uTanHalf,tanHalf);gl.uniform1f(U.uAspect,aspect);gl.uniform1f(U.uDist,DIST);gl.uniform2f(U.uOff,ox,0);gl.uniformMatrix3fv(U.uRot,false,rot);
+ gl.uniform3f(U.uColor,COLOR[0],COLOR[1],COLOR[2]);gl.uniform3f(U.uHot,HOT[0],HOT[1],HOT[2]);
+ gl.drawArrays(gl.POINTS,0,count)}
+requestAnimationFrame(frame)})();
+
+/* =========================================================
+   Butterfly Drift (Originkit) — vanilla WebGL port
+   A swarm of butterflies behind the 3D gallery; they scatter from the cursor.
+   ========================================================= */
+(function(){
+const host=document.getElementById('gallery3d-sec'),canvas=document.getElementById('butterflyCanvas');if(!host||!canvas)return;
+const gl=canvas.getContext('webgl',{antialias:false,alpha:true,depth:false});if(!gl)return;
+const vis=watchVisible(host);
+const MAX=140,VPB=6,FPV=12,STRIDE=FPV*4,TAU=Math.PI*2,SPAN=.042,CRUISE=.075,FLAP_HZ=5.5,PUSH=2.6,BOB=.55,WRAP=600;
+const V={count:70,span:SPAN*.9,speed:1.2,flap:.6,wander:.2,depth:1,blur:0,hover:1.4,reach:.2};
+const BASE=FX_HEX('#c47a8d'),ACCENT=FX_HEX('#e8c9a8');
+const CORNERS=[-1,-1,1,-1,-1,1,-1,1,1,-1,1,1];
+const VERT=`
+attribute vec2 a_corner;attribute vec2 a_center;attribute vec2 a_dir;attribute vec4 a_ext;attribute vec2 a_shade;
+uniform vec2 uHalf;uniform float uPxUnit;
+varying vec2 v_local;varying float v_fold;varying float v_seed;varying float v_aa;varying vec2 v_shade;
+void main(){v_local=a_corner;v_fold=a_ext.y;v_seed=a_ext.z;v_shade=a_shade;
+vec2 right=vec2(a_dir.y,-a_dir.x);vec2 world=a_center+(a_corner.x*right+a_corner.y*a_dir)*a_ext.x;
+float px=max(a_ext.x*uPxUnit,1.0);v_aa=(1.0+a_ext.w)/px;gl_Position=vec4(world/uHalf,0.0,1.0);}`;
+const FRAG=`
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec3 uBase;uniform vec3 uAccent;
+varying vec2 v_local;varying float v_fold;varying float v_seed;varying float v_aa;varying vec2 v_shade;
+float hash11(float n){return fract(sin(n*78.233)*43758.5453123);}
+vec2 rot(vec2 p,float a){float c=cos(a),s=sin(a);return vec2(c*p.x-s*p.y,s*p.x+c*p.y);}
+float sdEllipse(vec2 p,vec2 c,vec2 r){vec2 q=(p-c)/r;return(length(q)-1.0)*min(r.x,r.y);}
+float sdLobe(vec2 p,vec2 c,vec2 r,float ang,float e){vec2 q=abs(rot(p-c,-ang)/r)+1e-4;return(pow(pow(q.x,e)+pow(q.y,e),1.0/e)-1.0)*min(r.x,r.y);}
+float sdSeg(vec2 p,vec2 a,vec2 b){vec2 pa=p-a,ba=b-a;float h=clamp(dot(pa,ba)/dot(ba,ba),0.0,1.0);return length(pa-ba*h);}
+float smin(float a,float b,float k){float h=clamp(0.5+0.5*(b-a)/k,0.0,1.0);return mix(b,a,h)-k*h*(1.0-h);}
+void main(){
+ vec2 p=v_local;float fold=max(v_fold,0.08);vec2 w=vec2(abs(p.x)/fold,p.y);
+ float dFore=sdLobe(w,vec2(0.40,0.28),vec2(0.46,0.21),0.60,1.38);
+ float dHind=sdLobe(w,vec2(0.26,-0.24),vec2(0.32,0.22),-0.80,2.0);
+ float dRoot=sdLobe(w,vec2(0.16,0.01),vec2(0.23,0.29),0.0,2.0);
+ float dWing=smin(smin(dFore,dHind,0.03),dRoot,0.05);
+ float dBody=sdEllipse(p,vec2(0.0,-0.16),vec2(0.030,0.28));
+ dBody=smin(dBody,sdEllipse(p,vec2(0.0,0.17),vec2(0.048,0.14)),0.04);
+ dBody=smin(dBody,length(p-vec2(0.0,0.33))-0.042,0.03);
+ vec2 ap=vec2(abs(p.x),p.y);
+ float dAnt=sdSeg(ap,vec2(0.02,0.36),vec2(0.12,0.57))-0.008;
+ dAnt=min(dAnt,length(ap-vec2(0.131,0.593))-0.018);
+ float aa=v_aa;
+ float wingA=1.0-smoothstep(-aa,aa,dWing);float bodyA=1.0-smoothstep(-aa,aa,dBody);float antA=1.0-smoothstep(-aa,aa,dAnt);
+ float cover=max(max(wingA,bodyA),antA*0.9);if(cover<0.004)discard;
+ vec3 ink=uBase*0.38;vec3 bodyInk=uBase*0.20;
+ vec2 hq=w-vec2(0.04,0.05);float rad=length(hq);float t=smoothstep(0.16,0.74,rad);
+ vec3 wing=mix(uBase,uAccent,clamp(t*0.95+v_shade.y*0.25-0.12,0.0,1.0));
+ float va=atan(hq.y,max(hq.x,1e-4));
+ float vein=1.0-smoothstep(0.0,0.06,abs(fract(va*1.45+0.5)-0.5)*2.0);
+ wing=mix(wing,ink,vein*0.30*smoothstep(0.12,0.45,rad));
+ float rim=smoothstep(-0.055,-0.004,dWing);
+ vec2 qf=rot(w-vec2(0.40,0.28),-0.60)/vec2(0.46,0.21);
+ float spots=0.0;
+ for(int i=0;i<2;i++){float fi=float(i);float sd=v_seed*97.0+fi*11.0;
+  vec2 sc=vec2(-0.30+1.05*hash11(sd),-0.55+1.10*hash11(sd+4.7));
+  spots=max(spots,1.0-smoothstep(0.0,0.06,length(qf-sc)-0.13));}
+ spots*=step(dWing,0.0);
+ vec3 col=mix(wing,ink,clamp(rim*0.9+spots*0.5,0.0,1.0));
+ col*=1.0+0.12*p.x;col*=mix(0.72,1.0,fold);
+ col=mix(col,bodyInk,bodyA);col=mix(col,bodyInk,antA*0.9);
+ float a=cover*v_shade.x;gl_FragColor=vec4(clamp(col,0.0,1.0)*a,a);}`;
+const prog=makeProg(gl,VERT,FRAG,'butterflies');if(!prog)return;gl.useProgram(prog);
+const data=new Float32Array(MAX*VPB*FPV),buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,data.byteLength,gl.DYNAMIC_DRAW);
+[['a_corner',2,0],['a_center',2,2],['a_dir',2,4],['a_ext',4,6],['a_shade',2,10]].forEach(([nm,sz,o])=>{const l=gl.getAttribLocation(prog,nm);if(l<0)return;gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,sz,gl.FLOAT,false,STRIDE,o*4)});
+const U={};['uHalf','uPxUnit','uBase','uAccent'].forEach(k=>U[k]=gl.getUniformLocation(prog,k));
+gl.disable(gl.DEPTH_TEST);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.clearColor(0,0,0,0);
+/* Swarm state (deterministic seed so the layout is stable) */
+const F=()=>new Float32Array(MAX);
+const sw={x:F(),y:F(),vx:F(),vy:F(),dx:F(),dy:F(),th:F(),ph:F(),k1:F(),k2:F(),rate:F(),spd:F(),seed:F(),z:F(),panic:F(),order:new Int32Array(MAX),ordered:-1,bx:0,by:0};
+let s=0x2f6e2b1>>>0;const rnd=()=>{s=(Math.imul(s,1664525)+1013904223)>>>0;return s/4294967296};
+for(let i=0;i<MAX;i++){sw.th[i]=rnd()*TAU;sw.ph[i]=rnd()*TAU;sw.k1[i]=rnd()*TAU;sw.k2[i]=rnd()*TAU;sw.rate[i]=rnd();sw.spd[i]=.75+rnd()*.5;sw.seed[i]=rnd();sw.z[i]=((i+1)*.7320508075688772)%1;sw.dx[i]=Math.cos(sw.th[i]);sw.dy[i]=Math.sin(sw.th[i])}
+function place(bx,by){for(let i=0;i<MAX;i++){sw.x[i]=(((i+1)*.6180339887498949)%1)*2*bx-bx;sw.y[i]=(((i+1)*.41421356237309503)%1)*2*by-by}sw.bx=bx;sw.by=by}
+function reorder(n){const idx=[];for(let i=0;i<n;i++)idx.push(i);idx.sort((a,b)=>sw.z[a]-sw.z[b]);for(let i=0;i<n;i++)sw.order[i]=idx[i];sw.ordered=n}
+const ptr={x:0,y:0,on:0,onTarget:0};
+function track(e){const r=canvas.getBoundingClientRect();if(r.width<=0||r.height<=0)return;const fx=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),fy=Math.max(0,Math.min(1,(e.clientY-r.top)/r.height));ptr.x=(fx-.5)*(canvas.width/Math.max(1,canvas.height));ptr.y=.5-fy;ptr.onTarget=1}
+host.addEventListener('pointermove',track);host.addEventListener('pointerenter',track);host.addEventListener('pointerleave',()=>ptr.onTarget=0);host.addEventListener('pointercancel',()=>ptr.onTarget=0);
+let last=performance.now(),clock=0;
+function render(now){
+ requestAnimationFrame(render);
+ const dt=Math.min(.05,(now-last)/1000);last=now;if(pauseFX||!vis.v)return;
+ const dpr=Math.min(devicePixelRatio||1,2),cw=canvas.clientWidth||1200,ch=canvas.clientHeight||800,bw=Math.max(1,Math.round(cw*dpr)),bh=Math.max(1,Math.round(ch*dpr));
+ if(canvas.width!==bw||canvas.height!==bh){canvas.width=bw;canvas.height=bh;gl.viewport(0,0,bw,bh)}
+ const aspect=bw/bh,halfW=aspect*.5,margin=V.span*1.4,bx=halfW+margin,by=.5+margin;
+ if(sw.bx===0)place(bx,by);else if(Math.abs(bx-sw.bx)>sw.bx*.02){const k=bx/sw.bx;for(let i=0;i<MAX;i++)sw.x[i]*=k;sw.bx=bx}
+ sw.by=by;if(sw.ordered!==V.count)reorder(V.count);
+ const dts=dt*V.speed;clock=(clock+dts)%WRAP;
+ ptr.on+=(ptr.onTarget-ptr.on)*(1-Math.exp(-6*dt));
+ const reachW=Math.max(1e-4,V.reach),spread=V.depth,cruise=CRUISE*V.speed,flapRate=FLAP_HZ*V.flap*V.speed;
+ let o=0;
+ for(let k=0;k<V.count;k++){
+  const i=sw.order[k],z=sw.z[i],par=.65+.55*z;
+  sw.th[i]+=(Math.sin(clock*.9+sw.k1[i])*.85+Math.sin(clock*2.3+sw.k2[i])*.5)*V.wander*3*dts;
+  sw.ph[i]+=flapRate*(1+sw.panic[i]*1.5)*(.85+.3*sw.rate[i])*TAU*dt;if(sw.ph[i]>TAU*1024)sw.ph[i]-=TAU*1024;
+  const cs=Math.cos(sw.th[i]),sn=Math.sin(sw.th[i]),drive=cruise*sw.spd[i]*par,thrust=.55+.75*Math.max(0,Math.sin(sw.ph[i])),sway=Math.cos(sw.ph[i])*drive*BOB;
+  const wantX=cs*drive*thrust-sn*sway,wantY=sn*drive*thrust+cs*sway,kv=1-Math.exp(-3.5*dt);
+  sw.vx[i]+=(wantX-sw.vx[i])*kv;sw.vy[i]+=(wantY-sw.vy[i])*kv;
+  if(ptr.on>.001&&V.hover>0){const ddx=sw.x[i]-ptr.x,ddy=sw.y[i]-ptr.y,d=Math.sqrt(ddx*ddx+ddy*ddy);
+   if(d<reachW){const f0=1-d/reachW,f=f0*f0*ptr.on,inv=1/Math.max(d,1e-4);
+    sw.vx[i]+=ddx*inv*PUSH*V.hover*f*dt;sw.vy[i]+=ddy*inv*PUSH*V.hover*f*dt;
+    const away=Math.atan2(ddy,ddx);let diff=away-sw.th[i];diff=Math.atan2(Math.sin(diff),Math.cos(diff));sw.th[i]+=diff*Math.min(1,f*7*dt);if(f>sw.panic[i])sw.panic[i]=f}}
+  sw.panic[i]*=Math.exp(-1.2*dt);
+  const spd=Math.sqrt(sw.vx[i]*sw.vx[i]+sw.vy[i]*sw.vy[i]),maxSpd=drive*(1.8+6*sw.panic[i])+1e-6;
+  if(spd>maxSpd){const sc=maxSpd/spd;sw.vx[i]*=sc;sw.vy[i]*=sc}
+  sw.x[i]+=sw.vx[i]*dt;sw.y[i]+=sw.vy[i]*dt;
+  if(sw.x[i]>bx)sw.x[i]-=2*bx;else if(sw.x[i]<-bx)sw.x[i]+=2*bx;
+  if(sw.y[i]>by)sw.y[i]-=2*by;else if(sw.y[i]<-by)sw.y[i]+=2*by;
+  const vl=Math.sqrt(sw.vx[i]*sw.vx[i]+sw.vy[i]*sw.vy[i]),tx=vl>1e-5?sw.vx[i]/vl:cs,ty=vl>1e-5?sw.vy[i]/vl:sn,kd=1-Math.exp(-9*dt);
+  sw.dx[i]+=(tx-sw.dx[i])*kd;sw.dy[i]+=(ty-sw.dy[i])*kd;const dl=Math.sqrt(sw.dx[i]*sw.dx[i]+sw.dy[i]*sw.dy[i])||1;sw.dx[i]/=dl;sw.dy[i]/=dl;
+  const fold=.24+.76*Math.pow(.5+.5*Math.cos(sw.ph[i]),.62),half=V.span*(1+(z-.5)*spread*.9),far=1-z,alpha=1-spread*.6*far,blurPx=V.blur*4*far*far*spread;
+  for(let c=0;c<VPB;c++){data[o]=CORNERS[c*2];data[o+1]=CORNERS[c*2+1];data[o+2]=sw.x[i];data[o+3]=sw.y[i];data[o+4]=sw.dx[i];data[o+5]=sw.dy[i];data[o+6]=half;data[o+7]=fold;data[o+8]=sw.seed[i];data[o+9]=blurPx;data[o+10]=alpha;data[o+11]=sw.seed[i];o+=FPV}}
+ gl.uniform2f(U.uHalf,halfW,.5);gl.uniform1f(U.uPxUnit,bh);gl.uniform3f(U.uBase,BASE[0],BASE[1],BASE[2]);gl.uniform3f(U.uAccent,ACCENT[0],ACCENT[1],ACCENT[2]);
+ gl.bufferSubData(gl.ARRAY_BUFFER,0,data.subarray(0,o));gl.clear(gl.COLOR_BUFFER_BIT);gl.drawArrays(gl.TRIANGLES,0,V.count*VPB)}
+requestAnimationFrame(render)})();
+
+/* Shadow Cast — vanilla WebGL adaptation */
+(function(){const canvas=document.getElementById('shadowCanvas');if(!canvas)return;const gl=canvas.getContext('webgl',{antialias:false,alpha:false});if(!gl)return;
+const VS='attribute vec2 aPos;void main(){gl_Position=vec4(aPos,0.,1.);}';
+const FS=`#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+uniform vec2 uRes;uniform float uTime,uDpr;uniform vec3 uBg,uBase,uAccent;uniform vec2 uLight;uniform float uSpacing,uRadius,uJitter,uSoft,uFall,uGrain;
+const int MARCH=64;
+float h21(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453123);}
+vec2 blockerAt(vec2 c){vec2 j=vec2(h21(c+3.1),h21(c+8.7))-.5;return(c+.5)*uSpacing+j*(2.*uJitter);}
+float radiusAt(vec2 c){return uRadius*(.68+.64*h21(c+15.3));}
+void main(){vec2 uv=gl_FragCoord.xy/uRes;float asp=uRes.x/uRes.y;vec2 p=vec2(uv.x*asp,uv.y);float aa=1.4/uRes.y;
+vec2 toL=uLight-p;float maxT=length(toL);vec2 dir=maxT>1e-6?toL/maxT:vec2(0.,1.);
+vec2 cell=floor(p/uSpacing);vec2 sd=sign(dir);
+vec2 sd2=vec2(abs(dir.x)<1e-6?1e-6:dir.x,abs(dir.y)<1e-6?1e-6:dir.y);
+vec2 tD=abs(uSpacing/sd2);vec2 tM=((cell+max(sd,0.))*uSpacing-p)/sd2;
+if(abs(dir.x)<1e-6)tM.x=1e20;if(abs(dir.y)<1e-6)tM.y=1e20;
+float shade=1.,tr=0.;
+for(int i=0;i<64;i++){vec2 c=blockerAt(cell);float r=radiusAt(cell);vec2 pc=c-p;
+float t=clamp(dot(pc,dir),0.,maxT);float h=length(pc-dir*t)-r;
+if(h<0.){shade=0.;break;}shade=min(shade,h/max(t*uSoft,1e-5));
+if(tM.x<tM.y){tr=tM.x;cell.x+=sd.x;tM.x+=tD.x;}else{tr=tM.y;cell.y+=sd.y;tM.y+=tD.y;}
+if(tr>maxT)break;}
+shade=clamp(shade,0.,1.);
+float dist=length(uLight-p);float att=1./(1.+uFall*dist*dist);
+vec3 col=uBg+uAccent*att*shade;
+vec2 own=floor(p/uSpacing);vec2 pc=blockerAt(own);float pr=radiusAt(own);
+float pd=length(p-pc)-pr;float cov=1.-smoothstep(-aa,aa,pd);
+if(cov>0.){float dc=length(uLight-pc);float ac=1./(1.+uFall*dc*dc);
+vec2 tl=dc>1e-6?(uLight-pc)/dc:vec2(0.,1.);vec2 n=normalize(p-pc+1e-6);
+float lam=clamp(dot(n,tl)*.5+.5,0.,1.);
+float rim=smoothstep(-aa*3.,0.,pd)*pow(lam,3.);
+vec3 pil=uBase*(.24+1.25*pow(lam,1.6)*ac)+uAccent*rim*.5*ac;
+col=mix(col,pil,cov);}
+col+=(h21(gl_FragCoord.xy)-.5)*(1.5/255.);
+gl_FragColor=vec4(clamp(col,0.,1.),1.);}`;
+function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return o}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VS));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(pr);gl.useProgram(pr);
+const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+const ap=gl.getAttribLocation(pr,'aPos');gl.enableVertexAttribArray(ap);gl.vertexAttribPointer(ap,2,gl.FLOAT,false,0,0);
+const U=n=>gl.getUniformLocation(pr,n),u={res:U('uRes'),t:U('uTime'),d:U('uDpr'),bg:U('uBg'),b:U('uBase'),a:U('uAccent'),l:U('uLight'),sp:U('uSpacing'),r:U('uRadius'),j:U('uJitter'),s:U('uSoft'),f:U('uFall'),g:U('uGrain')};
+const host=document.getElementById('shadowHost'),vis=watchVisible(host);let mx=.5,my=.5,on=0,onT=0,clock=0,last=performance.now();
+host.addEventListener('pointermove',e=>{const r=host.getBoundingClientRect();mx=Math.min(1,Math.max(0,(e.clientX-r.left)/r.width));my=Math.min(1,Math.max(0,(e.clientY-r.top)/r.height));onT=1});
+host.addEventListener('pointerleave',()=>onT=0);
+function hex(c){c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return[parseInt(c.slice(0,2),16)/255,parseInt(c.slice(2,4),16)/255,parseInt(c.slice(4,6),16)/255]}
+function frame(now){requestAnimationFrame(frame);if(pauseFX||!vis.v){last=now;return}const dt=Math.min(.05,(now-last)/1000);last=now;clock=(clock+dt*.64)%3600;
+on+=(onT-on)*(1-Math.exp(-6*dt));
+const dpr=Math.min(devicePixelRatio||1,2),W=Math.max(1,host.clientWidth*dpr|0),H=Math.max(1,host.clientHeight*dpr|0);
+if(canvas.width!==W||canvas.height!==H){canvas.width=W;canvas.height=H}
+gl.viewport(0,0,W,H);const asp=W/H;
+const ix=asp*.5+.34*Math.sin(clock*.23),iy=.5+.26*Math.sin(clock*.37+1.3);
+const px=mx*asp,py=1-my,fol=Math.min(1,on);
+const bg=hex('#1a0f14'),base=hex('#c47a8d'),acc=hex('#e8c9a8');
+gl.uniform2f(u.res,W,H);gl.uniform1f(u.t,clock);gl.uniform1f(u.d,dpr);
+gl.uniform3f(u.bg,bg[0],bg[1],bg[2]);gl.uniform3f(u.b,base[0],base[1],base[2]);gl.uniform3f(u.a,acc[0],acc[1],acc[2]);
+gl.uniform2f(u.l,ix+(px-ix)*fol,iy+(py-iy)*fol);gl.uniform1f(u.s,1/24);
+gl.uniform1f(u.r,(1/24)*.225*1);gl.uniform1f(u.j,(1/24)*.25);
+gl.uniform1f(u.s,0.004+1*.26);gl.uniform1f(u.f,.22*6);gl.uniform1f(u.g,0);
+gl.drawArrays(gl.TRIANGLES,0,3)}
+requestAnimationFrame(frame)})();
+/* Scroll Wave Field — vanilla WebGL */
+(function(){const canvas=document.getElementById('waveCanvas');if(!canvas)return;const gl=canvas.getContext('webgl',{alpha:true,premultipliedAlpha:true});if(!gl)return;
+const VERT=`precision highp float;attribute vec2 aGrid,aSeed;uniform vec2 uRes,uDir,uJit;uniform float uFocal,uTime,uAmp,uScatter,uFreq,uFlow,uDepth,uCamY,uCamZ,uPitch,uRoll,uDot,uColorCount,uCurR,uCurS,uHover;uniform vec3 uColors[8],uCursor;varying vec3 vCol;varying float vA,vHot;
+vec3 pick(float s){float i=floor(s*uColorCount);vec3 c=uColors[0];for(int k=1;k<8;k++){if(float(k)>=uColorCount)break;if(float(k)==i)c=uColors[k];}return c;}
+float surf(vec2 q){return sin(q.x)*.55+sin(q.x*.55+q.y*1.15)*.3+sin(q.y*.75)*.22;}
+void main(){vec2 w=aGrid+(aSeed-.5)*uJit;w.y=uCamZ+mod(w.y-uFlow-uCamZ,uDepth);float h3=fract(sin(dot(aSeed,vec2(91.37,47.13)))*12345.678);
+float h=surf(w*uFreq-uDir*uTime)*uAmp+(h3-.5)*uScatter;
+float cd=length(w-uCursor.xy);float g=exp(-(cd*cd)/(uCurR*uCurR))*uCursor.z;h+=g*uCurS;
+float g2=g*g;g2=g2*g2;g2=g2*g2;
+vec3 p=vec3(w.x,h-uCamY,w.y-uCamZ);float c=cos(uPitch),s=sin(uPitch);
+float ry=p.y*c+p.z*s,rz=-p.y*s+p.z*c;
+if(rz<40.){gl_Position=vec4(2.,2.,0.,1.);gl_PointSize=0.;vA=0.;return;}
+float cr=cos(uRoll),sr=sin(uRoll);float rx=p.x*cr-ry*sr,ry2=p.x*sr+ry*cr;
+gl_Position=vec4(rx*uFocal/rz/(uRes.x*.5),ry2*uFocal/rz/(uRes.y*.5),0.,1.);
+gl_PointSize=clamp(max(uDot*uFocal/rz,.55)*2.*(1.+g2*.2),1.,220.);
+float bri=.28+h3*.72;vec2 bq=w*vec2(.004,.0032)-uDir*uTime*.3;
+float sel=fract((sin(bq.x)+sin(bq.y)+2.)*.25+(aSeed.y-.5)*.55);vCol=pick(sel);
+float lum=dot(vCol,vec3(.299,.587,.114));vHot=(.25+.75*lum)*bri*bri*.7+g2*.55;
+vA=bri*(1.-smoothstep(2800.,6400.,rz))*smoothstep(70.,240.,rz)*(1.+g2*.55);}`;
+const FRAG=`precision highp float;varying vec3 vCol;varying float vA,vHot;
+void main(){float d=length(gl_PointCoord-.5)*2.;if(d>1.)discard;float a=(1.-smoothstep(.9,1.,d))*vA;
+gl_FragColor=vec4((vCol+vec3(1.)*pow(1.-d,10.)*vHot*.9)*a,a);}`;
+function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return o}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VERT));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FRAG));gl.linkProgram(pr);gl.useProgram(pr);
+const U=n=>gl.getUniformLocation(pr,n),u={res:U('uRes'),f:U('uFocal'),t:U('uTime'),a:U('uAmp'),sc:U('uScatter'),fr:U('uFreq'),d:U('uDir'),fl:U('uFlow'),de:U('uDepth'),cy:U('uCamY'),cz:U('uCamZ'),pi:U('uPitch'),ro:U('uRoll'),do:U('uDot'),cc:U('uColorCount'),j:U('uJit'),c:U('uColors[0]'),cu:U('uCursor'),cr:U('uCurR'),cs:U('uCurS'),h:U('uHover')};
+const ag=gl.getAttribLocation(pr,'aGrid'),as=gl.getAttribLocation(pr,'aSeed'),gb=gl.createBuffer(),sb=gl.createBuffer(),pal=new Float32Array(24);
+let count=0,sx=1,sz=1,built=-1;
+function hex(c){c=c.replace('#','');if(c.length===3)c=c.split('').map(x=>x+x).join('');return[parseInt(c.slice(0,2),16)/255,parseInt(c.slice(2,4),16)/255,parseInt(c.slice(4,6),16)/255]}
+function build(d){const cols=Math.max(8,Math.round(d)),rows=Math.max(8,Math.round(d*2));count=cols*rows;sx=3600/(cols-1);sz=7000/(rows-1);
+const g=new Float32Array(count*2),s=new Float32Array(count*2);let r=123456789;const rnd=()=>{r^=r<<13;r^=r>>>17;r^=r<<5;return((r>>>0)%1e5)/1e5};let i=0;
+for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){g[i*2]=-1800+(x+.5)*sx;g[i*2+1]=y*sz;s[i*2]=rnd();s[i*2+1]=rnd();i++}
+gl.bindBuffer(gl.ARRAY_BUFFER,gb);gl.bufferData(gl.ARRAY_BUFFER,g,gl.STATIC_DRAW);gl.bindBuffer(gl.ARRAY_BUFFER,sb);gl.bufferData(gl.ARRAY_BUFFER,s,gl.STATIC_DRAW);built=d}
+gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE);
+let W=0,H=0,dpr=1,area=1;
+function resize(){dpr=Math.min(devicePixelRatio||1,1.5);W=canvas.clientWidth||canvas.parentElement.clientWidth;H=canvas.clientHeight||canvas.parentElement.clientHeight;area=Math.min(2.5,Math.max(.5,Math.sqrt(W*H/960000)));canvas.width=Math.max(1,W*dpr|0);canvas.height=Math.max(1,H*dpr|0);gl.viewport(0,0,canvas.width,canvas.height)}
+resize();addEventListener('resize',resize);
+let mx=0,my=0,hov=0,flow=0,phase=0,last=performance.now(),hx=0,hz=-1e6;
+const host=document.getElementById('waveHost'),vis=watchVisible(host);
+host.addEventListener('pointermove',e=>{const r=host.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;hov=1});
+host.addEventListener('pointerleave',()=>hov=0);
+const colors=['#e8c9a8','#a4556b','#f7e9dc','#5e2c3d'];
+function frame(now){requestAnimationFrame(frame);if(pauseFX||!vis.v){last=now;return}const dt=Math.min((now-last)/1000,.05);last=now;
+if(built!==145)build(145);if(!count)return;
+hov+=((hov?1:0)-hov)*Math.min(1,dt*7);phase+=dt*2;flow=(flow+dt*400)%7000;
+const pitch=12*Math.PI/180,cy=550*area,cz=700,f=canvas.height/(2*Math.tan(30*Math.PI/180));
+if(hov>.001){const px=mx*dpr-canvas.width/2,py=-(my*dpr-canvas.height/2),dx=px/f,dy=py/f,c=Math.cos(pitch),s=Math.sin(pitch),wy=dy*c-s,wz=dy*s+c;
+if(wy<-1e-4){const t=-cy/wy;hx=dx*t;hz=cz+wz*t}}else{hx=0;hz=-1e6}
+colors.forEach((c,i)=>{const v=hex(c);pal[i*3]=v[0];pal[i*3+1]=v[1];pal[i*3+2]=v[2]});
+gl.uniform2f(u.res,canvas.width,canvas.height);gl.uniform1f(u.f,f);gl.uniform1f(u.t,phase);gl.uniform1f(u.a,200);gl.uniform1f(u.sc,108);gl.uniform1f(u.fr,6.283/2070);
+gl.uniform2f(u.d,0,-1);gl.uniform1f(u.fl,flow);gl.uniform1f(u.de,7000);gl.uniform1f(u.cy,cy);gl.uniform1f(u.cz,cz);gl.uniform1f(u.pi,pitch);gl.uniform1f(u.ro,0);gl.uniform1f(u.do,2);gl.uniform1f(u.cc,colors.length);gl.uniform2f(u.j,sx*.25,sz*.7);gl.uniform3fv(u.c,pal);gl.uniform3f(u.cu,hx,hz,hov);gl.uniform1f(u.cr,450);gl.uniform1f(u.cs,45);gl.uniform1f(u.h,1);
+gl.bindBuffer(gl.ARRAY_BUFFER,gb);gl.enableVertexAttribArray(ag);gl.vertexAttribPointer(ag,2,gl.FLOAT,false,0,0);
+gl.bindBuffer(gl.ARRAY_BUFFER,sb);gl.enableVertexAttribArray(as);gl.vertexAttribPointer(as,2,gl.FLOAT,false,0,0);
+gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.drawArrays(gl.POINTS,0,count)}
+requestAnimationFrame(frame)})();
+/* 3D gallery pause on hover */
+(function(){const g=document.getElementById('gallery3d'),s=document.getElementById('g3dStage');if(!g||!s)return;
+g.addEventListener('mouseenter',()=>s.style.animationPlayState='paused');
+g.addEventListener('mouseleave',()=>s.style.animationPlayState='running')})();
+/* Site logic */
+const products=[
+{id:1,name:"Aurora Oval",brand:"Olive Signature",sku:"OLV-EG-001",cat:"eyeglasses",shape:"oval",style:"minimal",price:4490,mrp:5290,colours:["Tortoise","Black"],material:"Acetate",use:"Everyday",new:true,stock:8,img:"https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=85",desc:"A refined oval acetate frame.",face:["round","square","heart"]},
+{id:2,name:"Meridian Square",brand:"Olive Signature",sku:"OLV-EG-002",cat:"eyeglasses",shape:"square",style:"classic",price:5990,mrp:6990,colours:["Charcoal","Rose"],material:"Metal",use:"Office",new:true,stock:5,img:"https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85",desc:"A confident square metal frame.",face:["round","oval","heart"]},
+{id:3,name:"Solstice Round",brand:"Lumen",sku:"OLV-EG-003",cat:"eyeglasses",shape:"round",style:"classic",price:3290,mrp:3890,colours:["Gold","Gunmetal"],material:"Metal",use:"Everyday",new:false,stock:12,img:"https://images.unsplash.com/photo-1509695507497-903c140c43b0?auto=format&fit=crop&w=1200&q=85",desc:"Lightweight round metal eyewear.",face:["square","oblong","heart"]},
+{id:4,name:"Vista Shield",brand:"Horizon",sku:"OLV-SG-004",cat:"sunglasses",shape:"square",style:"bold",price:7990,mrp:9490,colours:["Black","Rose"],material:"Acetate",use:"Fashion",new:true,stock:6,img:"https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1200&q=85",desc:"A bold sunglasses silhouette.",face:["oval","heart","round"]},
+{id:5,name:"Sable Cat-Eye",brand:"Olive Signature",sku:"OLV-SG-005",cat:"sunglasses",shape:"cat-eye",style:"bold",price:6890,mrp:7990,colours:["Ivory","Black"],material:"Acetate",use:"Fashion",new:false,stock:4,img:"https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1200&q=85",desc:"Elevated cat-eye sunglasses.",face:["square","oblong","diamond"]},
+{id:6,name:"Focus Blue",brand:"Clarity",sku:"OLV-CG-006",cat:"computer",shape:"rectangle",style:"minimal",price:2490,mrp:2990,colours:["Black","Tortoise"],material:"TR90",use:"Computer",new:false,stock:15,img:"https://images.unsplash.com/photo-1577741314755-048d8525f8f9?auto=format&fit=crop&w=1200&q=85",desc:"A lightweight computer-frame option.",face:["oval","round","square"]},
+{id:7,name:"Readwell Slim",brand:"Clarity",sku:"OLV-RG-007",cat:"reading",shape:"rectangle",style:"minimal",price:1890,mrp:2290,colours:["Black","Brown"],material:"TR90",use:"Reading",new:false,stock:20,img:"https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=85",desc:"A practical slim reading frame.",face:["oval","heart","square"]},
+{id:8,name:"Terra Aviator",brand:"Horizon",sku:"OLV-SG-008",cat:"sunglasses",shape:"aviator",style:"classic",price:5490,mrp:6490,colours:["Gold","Silver"],material:"Metal",use:"Driving",new:true,stock:9,img:"https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=1200&q=85",desc:"A refined aviator frame.",face:["heart","square","oval"]}];
+let cart=[],wishlist=[],activeFilter="all",quiz={};
+const fmt=n=>"₹"+n.toLocaleString("en-IN");
+function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),3200)}
+function renderProducts(){const q=(document.getElementById("searchInput").value||"").toLowerCase();
+const list=products.filter(p=>{const c=activeFilter==="all"||(activeFilter==="new"?p.new:p.cat===activeFilter);const s=!q||[p.name,p.brand,p.shape,p.style,p.material,p.cat].join(" ").toLowerCase().includes(q);return c&&s});
+document.getElementById("productGrid").innerHTML=list.map(p=>`<article class="product reveal visible"><div class="product-img">${photo(p,p.name,'loading="lazy"')}${p.new?'<span class="badge product-tag">New</span>':""}<button class="wish ${wishlist.includes(p.id)?"active":""}" onclick="toggleWish(${p.id})">♡</button></div><div class="product-body"><span class="product-brand">${p.brand} · ${p.shape}</span><h3>${p.name}</h3><div class="price">${fmt(p.price)} <s>${fmt(p.mrp)}</s></div><span class="stock-dot">${p.stock>0?p.stock+" in stock · demo":"Out of stock · demo"}</span><div class="product-actions"><button class="btn btn-primary btn-sm" onclick="addToCart(${p.id})">Add to Bag</button><button class="btn btn-outline btn-sm" onclick="openProduct(${p.id})">Details</button></div></div></article>`).join("")}
+document.querySelectorAll("[data-filter]").forEach(el=>el.addEventListener("click",e=>{if(el.dataset.filter){e.preventDefault();setFilter(el.dataset.filter);document.getElementById("shop").scrollIntoView({behavior:"smooth"})}}));
+function setFilter(f){activeFilter=f;document.querySelectorAll("#filterChips .chip").forEach(c=>c.classList.toggle("active",c.dataset.filter===f));renderProducts()}
+function addToCart(id){const p=products.find(x=>x.id===id);const ex=cart.find(c=>c.id===id);ex?ex.qty++:cart.push({...p,qty:1});updateCart();toast(p.name+" added to demo bag");openDrawer("cartDrawer")}
+function updateCart(){document.getElementById("cartCount").textContent=cart.reduce((s,i)=>s+i.qty,0);
+document.getElementById("cartItems").innerHTML=cart.length?cart.map(i=>`<div class="cart-item">${photo(i,i.name)}<div><strong>${i.name}</strong><div class="muted">${fmt(i.price)} · Qty ${i.qty}</div><div class="qty"><button onclick="changeQty(${i.id},-1)">−</button><button onclick="changeQty(${i.id},1)">+</button></div></div><button onclick="removeCart(${i.id})" class="muted">Remove</button></div>`).join(""):'<p class="muted">Your demo bag is empty.</p>';
+document.getElementById("cartTotal").textContent=fmt(cart.reduce((s,i)=>s+i.price*i.qty,0))}
+function changeQty(id,d){const i=cart.find(x=>x.id===id);i.qty+=d;if(i.qty<1)cart=cart.filter(x=>x.id!==id);updateCart()}
+function removeCart(id){cart=cart.filter(x=>x.id!==id);updateCart()}
+function checkoutDemo(){if(!cart.length)return toast("Add a frame first.");toast("Demo checkout: no order or payment processed.")}
+function toggleWish(id){wishlist.includes(id)?wishlist=wishlist.filter(x=>x!==id):wishlist.push(id);renderProducts();renderWishlist();toast(wishlist.includes(id)?"Saved to wishlist":"Removed")}
+function renderWishlist(){document.getElementById("wishlistItems").innerHTML=wishlist.length?wishlist.map(id=>{const p=products.find(x=>x.id===id);return `<div class="cart-item">${photo(p,p.name)}<div><strong>${p.name}</strong><div class="muted">${fmt(p.price)}</div></div><button class="btn btn-outline btn-sm" onclick="openProduct(${p.id})">View</button></div>`}).join(""):'<p class="muted">Wishlist is empty.</p>'}
+function openDrawer(id){closeDrawers();document.getElementById(id).classList.add("open")}
+function closeDrawers(){document.querySelectorAll(".drawer").forEach(d=>d.classList.remove("open"))}
+function openProduct(id){const p=products.find(x=>x.id===id);
+document.getElementById("detailContent").innerHTML=`<div><div class="detail-img">${photo(p,p.name)}</div></div><div><span class="eyebrow">${p.brand} · ${p.sku}</span><h2 style="font-size:2.4rem;margin:.7rem 0">${p.name}</h2><div class="price" style="font-size:1.6rem">${fmt(p.price)} <s>${fmt(p.mrp)}</s></div><p class="muted" style="margin:1rem 0">${p.desc}</p><div style="display:grid;gap:.45rem;font-size:.88rem"><span><strong>Frame:</strong> ${p.shape} · ${p.material}</span><span><strong>Use:</strong> ${p.use}</span><span><strong>Colours:</strong> ${p.colours.join(", ")}</span><span><strong>Availability:</strong> ${p.stock>0?p.stock+" units (demo)":"Out of stock"}</span></div><div style="display:flex;gap:.6rem;margin-top:1.6rem"><button class="btn btn-primary" onclick="addToCart(${p.id});closeModal()">Add to Bag</button><button class="btn btn-outline" onclick="toggleWish(${p.id})">♡ Wishlist</button></div></div>`;
+document.getElementById("productModal").classList.add("open")}
+function closeModal(){document.getElementById("productModal").classList.remove("open")}
+document.getElementById("productModal").addEventListener("click",e=>{if(e.target.id==="productModal")closeModal()});
+function focusSearch(){document.getElementById("shop").scrollIntoView({behavior:"smooth"});setTimeout(()=>document.getElementById("searchInput").focus(),550)}
+document.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{b.closest(".opt-grid").querySelectorAll(".opt").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");const step=b.closest(".quiz-step");const n=+step.dataset.step;
+if(n===1)quiz.face=b.dataset.face;if(n===2)quiz.style=b.dataset.style;if(n===3)quiz.budget=b.dataset.budget;
+if(n<3){step.classList.remove("active");document.querySelector(`[data-step="${n+1}"]`).classList.add("active")}else showQuizResult()}));
+function showQuizResult(){let rec=products.filter(p=>p.cat!=="sunglasses");
+if(quiz.face&&quiz.face!=="unsure")rec=rec.filter(p=>p.face.includes(quiz.face));
+if(quiz.style)rec=rec.filter(p=>p.style===quiz.style);
+if(quiz.budget==="under")rec=rec.filter(p=>p.price<3000);if(quiz.budget==="mid")rec=rec.filter(p=>p.price>=3000&&p.price<=8000);if(quiz.budget==="premium")rec=rec.filter(p=>p.price>8000);
+if(!rec.length)rec=products.slice(0,3);
+document.querySelector('[data-step="3"]').classList.remove("active");document.querySelector('[data-step="4"]').classList.add("active");
+document.getElementById("quizResult").innerHTML=rec.slice(0,3).map(p=>`<div class="result-card"><strong>${p.name}</strong> · ${p.brand}<br><span class="muted" style="color:rgba(253,248,244,.7)">${p.shape} · ${fmt(p.price)} · demo stock ${p.stock}</span><br><button class="btn btn-gold btn-sm" style="margin-top:.8rem" onclick="openProduct(${p.id})">View frame</button></div>`).join("")}
+function restartQuiz(){quiz={};document.querySelectorAll(".quiz-step").forEach(s=>s.classList.remove("active"));document.querySelectorAll(".opt.selected").forEach(o=>o.classList.remove("selected"));document.querySelector('[data-step="1"]').classList.add("active")}
+
+/* ============================================================
+   LIVE FACE-SHAPE DETECTION  (MediaPipe Face Landmarker, in-browser)
+   ============================================================ */
+const MP_VER="0.10.21";
+const MP_MODEL="https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task";
+const SAMPLES=24;
+/* Load order: your own local copy first (most reliable), then public CDNs */
+const PAGE_DIR=(function(){try{const h=String(location.href).split("#")[0].split("?")[0];return h.substring(0,h.lastIndexOf("/")+1)}catch(e){return "./"}})();
+const abs=p=>PAGE_DIR+p;
+const MP_SOURCES=[
+ {js:abs("mediapipe/vision_bundle.mjs"),wasm:abs("mediapipe/wasm"),model:abs("mediapipe/face_landmarker.task")},
+ {js:"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@"+MP_VER+"/vision_bundle.mjs",wasm:"https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@"+MP_VER+"/wasm",model:MP_MODEL},
+ {js:"https://unpkg.com/@mediapipe/tasks-vision@"+MP_VER+"/vision_bundle.mjs",wasm:"https://unpkg.com/@mediapipe/tasks-vision@"+MP_VER+"/wasm",model:MP_MODEL}
+];
+const FACE_GUIDE={
+ round:{label:"Round",tip:"Your face is about as wide as it is long with soft curves. Angular, structured frames add definition and make the face look longer.",shapes:["square","rectangle","cat-eye"]},
+ square:{label:"Square",tip:"You have a strong jawline and a broad forehead. Soft, curved frames balance the angles.",shapes:["round","oval","aviator"]},
+ oval:{label:"Oval",tip:"Your proportions are well balanced, so most frame shapes suit you. Choose by style and use.",shapes:["square","rectangle","aviator","cat-eye","oval","round"]},
+ heart:{label:"Heart",tip:"Your forehead is wider than your chin. Light, rounded or bottom-balanced frames soften the top and add width below.",shapes:["oval","round","aviator","rectangle"]},
+ oblong:{label:"Oblong",tip:"Your face is longer than it is wide. Deeper, wider frames add width and visually shorten the face.",shapes:["round","square","cat-eye","aviator"]}
+};
+const FACE_OVAL=[10,338,297,332,284,251,389,356,454,323,361,288,397,365,379,378,400,377,152,148,176,149,150,136,172,58,132,93,234,127,162,21,54,103,67,109];
+let stream=null,landmarker=null,loopId=0,sampling=null,lastVT=-1,loadingModel=false,holdStatus=0,delegateUsed="",forceCPU=false;
+const $=id=>document.getElementById(id);
+const camEl=$("cam"),camCanvas=$("camCanvas"),camCtx=camCanvas.getContext("2d");
+function setStatus(t){$("scanStatus").textContent=t}
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+
+/* Load the model: try GPU first (fast), fall back to CPU (works everywhere). Tries two CDNs. */
+async function loadModel(){
+ if(landmarker)return landmarker;
+ let lastErr;
+ for(const src of MP_SOURCES){
+  try{
+   const mod=await import(src.js);
+   const fs=await mod.FilesetResolver.forVisionTasks(src.wasm);
+   const delegates=forceCPU?["CPU"]:["GPU","CPU"];
+   for(const delegate of delegates){
+    try{
+     landmarker=await mod.FaceLandmarker.createFromOptions(fs,{baseOptions:{modelAssetPath:src.model,delegate:delegate},runningMode:"VIDEO",numFaces:1});
+     delegateUsed=delegate;
+     return landmarker}
+    catch(e){lastErr=e;console.warn(delegate+" delegate failed",e)}}}
+  catch(e){lastErr=e;console.error("Face model load failed from "+src.js,e)}}
+ throw lastErr||new Error("Model could not be loaded")}
+
+/* If the GPU delegate misbehaves at detection time, silently switch to CPU */
+async function fallbackToCPU(){
+ cancelAnimationFrame(loopId);
+ forceCPU=true;
+ try{if(landmarker&&landmarker.close)landmarker.close()}catch(e){}
+ landmarker=null;
+ setStatus("Switching to compatible mode…");
+ try{await loadModel();lastVT=-1;if(stream)loop()}
+ catch(e){console.error(e);setStatus("Model failed to load — tap Start Camera to retry")}}
+
+async function startScan(){
+ if(stream||loadingModel)return;
+ $("camWrap").classList.remove("photo");
+ if(!window.isSecureContext||!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){setStatus("Camera needs HTTPS — upload a photo instead");toast("Camera works only on https:// or localhost. Use Upload Photo.");return}
+ try{setStatus("Starting camera…");
+  stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:"user",width:{ideal:960},height:{ideal:720}},audio:false})}
+ catch(e){stream=null;const n=e&&e.name;
+  let msg="Camera unavailable — upload a photo instead";
+  if(n==="NotAllowedError"||n==="SecurityError")msg="Camera blocked — click the lock icon in the address bar, allow Camera, then retry. Or upload a photo.";
+  else if(n==="NotFoundError")msg="No camera found — upload a photo instead";
+  else if(n==="NotReadableError")msg="Camera is in use by another app — close it or upload a photo";
+  setStatus(n==="NotAllowedError"?"Camera blocked — allow it in the address bar or upload a photo":msg);toast(msg);return}
+ camEl.srcObject=stream;$("camWrap").classList.add("live");
+ pauseFX=true; /* free up the GPU/CPU for face detection */
+ try{await camEl.play()}catch(e){}
+ if(!camEl.videoWidth)await new Promise(r=>{camEl.onloadedmetadata=r;setTimeout(r,3000)});
+ if(!camEl.videoWidth){stopCamera();setStatus("Camera gave no video — retry or upload a photo");return}
+ $("camWrap").style.aspectRatio=camEl.videoWidth+"/"+camEl.videoHeight;
+ camCanvas.width=camEl.videoWidth;camCanvas.height=camEl.videoHeight;
+ loadingModel=true;setStatus("Loading face detection model…");
+ try{await loadModel()}
+ catch(e){console.error(e);loadingModel=false;const why=(e&&e.message)||String(e);stopCamera();setStatus("Model failed to load — tap Start Camera to retry");toast("Could not load the face model ("+why.slice(0,80)+"). Check your internet connection, then retry.");return}
+ loadingModel=false;
+ if(!stream)return;
+ $("scanBtn").disabled=false;
+ setStatus("Face the camera, then tap Detect Face Shape");
+ lastVT=-1;loop()}
+
+function stopCamera(){
+ cancelAnimationFrame(loopId);sampling=null;
+ if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}
+ camEl.srcObject=null;$("camWrap").classList.remove("live");camCtx.clearRect(0,0,camCanvas.width,camCanvas.height);
+ pauseFX=false;
+ $("scanBtn").disabled=true;setStatus("Camera is off")}
+
+function captureShape(){
+ if(!stream||!landmarker)return;
+ sampling=[];setStatus("Hold still… 0/"+SAMPLES)}
+
+function loop(){
+ if(!stream)return;
+ loopId=requestAnimationFrame(loop);
+ if(camEl.readyState<2||!camEl.videoWidth)return;
+ if(camEl.currentTime===lastVT)return; /* only process new video frames */
+ lastVT=camEl.currentTime;
+ let res;
+ try{res=landmarker.detectForVideo(camEl,performance.now())}
+ catch(e){console.error(e);
+  if(delegateUsed==="GPU"&&!forceCPU){fallbackToCPU();return}
+  setStatus("Detection error: "+((e&&e.message)||e).toString().slice(0,60));return}
+ const lm=res&&res.faceLandmarks&&res.faceLandmarks[0];
+ drawFace(lm);
+ if(!lm){if(sampling)sampling=[];setStatus("No face found — centre your face in the frame");return}
+ const m=measure(lm,camEl.videoWidth,camEl.videoHeight);
+ if(sampling){
+  if(!m.frontal){setStatus("Look straight at the camera");return}
+  sampling.push(m);setStatus("Hold still… "+sampling.length+"/"+SAMPLES);
+  if(sampling.length>=SAMPLES){const arr=sampling;sampling=null;finishScan(arr)}
+ }else if(performance.now()>holdStatus)setStatus(m.frontal?"Face detected — tap Detect Face Shape":"Look straight at the camera")}
+
+function drawFace(lm){
+ const W=camCanvas.width,H=camCanvas.height;camCtx.clearRect(0,0,W,H);
+ if(!lm)return;
+ const P=i=>[lm[i].x*W,lm[i].y*H];
+ camCtx.lineWidth=Math.max(2,W/320);camCtx.strokeStyle="rgba(232,201,168,.95)";camCtx.fillStyle="rgba(232,201,168,.95)";
+ camCtx.beginPath();FACE_OVAL.forEach((i,k)=>{const[x,y]=P(i);k?camCtx.lineTo(x,y):camCtx.moveTo(x,y)});camCtx.closePath();camCtx.stroke();
+ camCtx.setLineDash([8,6]);camCtx.strokeStyle="rgba(255,255,255,.75)";
+ [[10,152],[234,454],[172,397],[103,332]].forEach(([a,b])=>{const[x1,y1]=P(a),[x2,y2]=P(b);camCtx.beginPath();camCtx.moveTo(x1,y1);camCtx.lineTo(x2,y2);camCtx.stroke()});
+ camCtx.setLineDash([]);
+ [10,152,234,454,172,397,103,332].forEach(i=>{const[x,y]=P(i);camCtx.beginPath();camCtx.arc(x,y,Math.max(3,W/200),0,6.283);camCtx.fill()})}
+
+/* Measurements from landmarks (ratios relative to cheekbone width) */
+function measure(lm,W,H){
+ const d=(a,b)=>Math.hypot((lm[a].x-lm[b].x)*W,(lm[a].y-lm[b].y)*H);
+ const len=d(10,152),cheek=d(234,454),jaw=d(172,397),fore=d(103,332);
+ const nose=(lm[1].x-lm[234].x)/(lm[454].x-lm[234].x);
+ return{lr:len/cheek,jr:jaw/cheek,fr:fore/cheek,frontal:nose>.2&&nose<.8}}
+
+const median=a=>{const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+
+/* Face-shape rules — thresholds are in one place so they can be tuned */
+function classify({lr,jr,fr}){
+ if(lr>=1.38)return"oblong";
+ if(fr/jr>=1.08&&jr<.80)return"heart";
+ if(jr>=.86&&lr<1.34)return"square";
+ if(lr<1.22)return"round";
+ return"oval"}
+
+function finishScan(arr){
+ const m={lr:median(arr.map(x=>x.lr)),jr:median(arr.map(x=>x.jr)),fr:median(arr.map(x=>x.fr))};
+ const shape=classify(m);
+ setStatus("Detected: "+FACE_GUIDE[shape].label+" face — see your result →");holdStatus=performance.now()+6000;
+ showShape(shape,m);toast("Face shape detected: "+FACE_GUIDE[shape].label);
+ const p=$("shapePanel");if(p&&innerWidth<1080)p.scrollIntoView({behavior:"smooth",block:"start"})}
+
+function pickShape(s){showShape(s,null)}
+
+/* Analyse an uploaded photo (works without a camera) */
+async function analysePhoto(file){
+ if(!file)return;
+ stopCamera();
+ const img=$("photoEl"),url=URL.createObjectURL(file);
+ setStatus("Loading photo…");
+ try{await new Promise((res,rej)=>{img.onload=res;img.onerror=rej;img.src=url})}
+ catch(e){setStatus("Could not read that image");toast("Could not read that image");return}
+ $("camWrap").classList.add("photo");
+ $("camWrap").style.aspectRatio=img.naturalWidth+"/"+img.naturalHeight;
+ camCanvas.width=img.naturalWidth;camCanvas.height=img.naturalHeight;
+ setStatus("Loading face detection model…");
+ try{await loadModel()}catch(e){console.error(e);setStatus("Detection model failed to load");toast("Could not load face model. Check your internet connection.");return}
+ let res;
+ try{await landmarker.setOptions({runningMode:"IMAGE"});res=landmarker.detect(img);await landmarker.setOptions({runningMode:"VIDEO"})}
+ catch(e){console.error(e);setStatus("Could not analyse photo: "+((e&&e.message)||e).toString().slice(0,60));return}
+ const lm=res&&res.faceLandmarks&&res.faceLandmarks[0];
+ drawFace(lm);
+ if(!lm){setStatus("No face found — use a clear, front-facing photo");toast("No face found in that photo");return}
+ const m=measure(lm,img.naturalWidth,img.naturalHeight);
+ if(!m.frontal)toast("For best accuracy use a straight-on photo");
+ const shape=classify(m);
+ setStatus("Detected: "+FACE_GUIDE[shape].label+" face");
+ showShape(shape,m)}
+
+/* Illustrated face-shape picker */
+const SHAPE_SVG={
+ oval:'<ellipse cx="50" cy="60" rx="32" ry="46"/>',
+ round:'<ellipse cx="50" cy="60" rx="40" ry="42"/>',
+ square:'<rect x="14" y="20" width="72" height="82" rx="14"/>',
+ heart:'<path d="M12 38Q12 12 50 12Q88 12 88 38Q88 68 62 96Q50 110 50 110Q50 110 38 96Q12 68 12 38Z"/>',
+ oblong:'<rect x="21" y="8" width="58" height="104" rx="28"/>'};
+function shapePicker(active){
+ return Object.keys(FACE_GUIDE).map(k=>`<button class="shape-card ${k===active?"active":""}" onclick="pickShape('${k}')" aria-label="${FACE_GUIDE[k].label} face"><div class="shape-art"><img src="images/faces/${k}.jpg" alt="${FACE_GUIDE[k].label} face" onerror="this.remove()"><svg viewBox="0 0 100 130"><rect width="100" height="130" rx="10" fill="#f7e9ee"/><path d="M8 130Q10 106 36 100L50 110L64 100Q90 106 92 130Z" fill="#a4556b"/><rect x="42" y="84" width="16" height="22" fill="#e2b9a2"/><g transform="translate(14,6) scale(.72)"><g fill="#f0cdb8" stroke="#8a5a4a" stroke-width="2.5" stroke-linecap="round">${SHAPE_SVG[k]}</g><path d="M8 58Q4 0 50 0Q96 0 92 58Q86 24 50 22Q14 24 8 58Z" fill="#3b2a2f"/><path d="M30 48Q38 44 44 48M56 48Q62 44 70 48" stroke="#3b2a2f" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="37" cy="58" r="3.2" fill="#3b2a2f"/><circle cx="63" cy="58" r="3.2" fill="#3b2a2f"/><path d="M50 62L47 76Q50 78 53 76" stroke="#8a5a4a" stroke-width="2.5" fill="none"/><path d="M39 88Q50 96 61 88" stroke="#a4556b" stroke-width="3.5" fill="none" stroke-linecap="round"/></g></svg></div><span>${FACE_GUIDE[k].label}</span></button>`).join("")}
+
+/* Generated frame illustration — a distinct image for every product */
+const FRAME_COL={Tortoise:"#8a5a2b",Black:"#2a1f24",Charcoal:"#4a4a52",Rose:"#c47a8d",Gold:"#c99a6b",Gunmetal:"#5b6168",Ivory:"#d9cdb8",Brown:"#6b4226",Silver:"#aeb3bb"};
+const LENS={
+ round:'<circle cx="62" cy="50" r="30"/>',
+ oval:'<ellipse cx="62" cy="50" rx="34" ry="26"/>',
+ square:'<rect x="30" y="24" width="64" height="52" rx="8"/>',
+ rectangle:'<rect x="28" y="30" width="68" height="40" rx="6"/>',
+ "cat-eye":'<path d="M28 52Q28 32 54 31L88 24Q94 50 86 66Q66 78 44 71Q28 67 28 52Z"/>',
+ aviator:'<path d="M30 30Q62 20 94 30Q98 66 70 80Q36 82 30 30Z"/>'};
+function frameImg(p){
+ const col=FRAME_COL[p.colours[0]]||"#5e2c3d",dark=p.cat==="sunglasses";
+ const half=`<g fill="${dark?"#2a1f24":"#ffffff"}" fill-opacity="${dark?.72:.4}" stroke="${col}" stroke-width="5" stroke-linejoin="round">${LENS[p.shape]||LENS.oval}</g><path d="M30 42L8 36" stroke="${col}" stroke-width="5" stroke-linecap="round"/>`;
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7e9ee"/><stop offset="1" stop-color="#fdf8f4"/></linearGradient></defs><rect width="200" height="150" fill="url(#g)"/><g transform="translate(0,28)">${half}<g transform="translate(200,0) scale(-1,1)">${half}</g><path d="M94 44Q100 36 106 44" fill="none" stroke="${col}" stroke-width="5" stroke-linecap="round"/></g></svg>`;
+ return "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(svg)}
+/* Real photos are the main image; the drawn frame is only a last-resort fallback */
+/* Real product photos: drop your own files into images/frames/ named by SKU
+   (e.g. images/frames/OLV-EG-001.jpg, .webp or .png). Until a file exists the card
+   falls back to the stock photo in the catalogue, then to a plain "photo coming soon" tile. */
+const PHOTO_PLACEHOLDER="data:image/svg+xml;charset=utf-8,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f7e9ee"/><text x="100" y="104" text-anchor="middle" font-family="Jost,sans-serif" font-size="11" letter-spacing="2" fill="#a4556b">PHOTO COMING SOON</text></svg>');
+function photoList(p){return["images/frames/"+p.sku+".jpg","images/frames/"+p.sku+".webp","images/frames/"+p.sku+".png",p.img]}
+function imgFail(el){const l=el.dataset.c.split("|"),i=+el.dataset.i+1;if(i<l.length){el.dataset.i=i;el.src=l[i]}else{el.onerror=null;el.src=PHOTO_PLACEHOLDER}}
+function photo(p,alt,attrs){const l=photoList(p);return `<img src="${l[0]}" data-c="${l.join("|")}" data-i="0" alt="${alt}" ${attrs||""} onerror="imgFail(this)">`}
+
+function showShape(shape,m){
+ const g=FACE_GUIDE[shape];
+ const recs=products.filter(p=>g.shapes.includes(p.shape)).sort((a,b)=>g.shapes.indexOf(a.shape)-g.shapes.indexOf(b.shape)).slice(0,4);
+ $("shapePanel").innerHTML=
+  `<span class="eyebrow">${m?"Detected from your camera":"Selected manually"}</span>
+   <div class="shape-name">${g.label} face</div>
+   <p class="muted">${g.tip}</p>
+   ${m?`<div class="meas"><span>Length ÷ width: ${m.lr.toFixed(2)}</span><span>Jaw ÷ cheek: ${m.jr.toFixed(2)}</span><span>Forehead ÷ cheek: ${m.fr.toFixed(2)}</span></div>`:""}
+   <h3 class="serif" style="font-size:1.5rem;margin-top:1.2rem">Frames that suit a ${g.label.toLowerCase()} face</h3>
+   <div class="rec-grid">${recs.map(p=>`<div class="rec">${photo(p,p.name+" — "+p.shape+" frame",'loading="lazy"')}<div class="rec-body"><strong>${p.name}</strong><span class="price" style="font-size:1.05rem">${fmt(p.price)}</span><span class="rec-why">${cap(p.shape)} shape — recommended for a ${g.label.toLowerCase()} face.</span><div class="product-actions" style="padding-top:.6rem"><button class="btn btn-primary btn-sm" onclick="addToCart(${p.id})">Add</button><button class="btn btn-outline btn-sm" onclick="openProduct(${p.id})">View</button></div></div></div>`).join("")}</div>
+   <p class="muted" style="margin-top:1rem;font-size:.76rem">Face shape is a styling guide, not a rule. ${m?"Not right? Pick your shape manually:":"Or pick another shape:"}</p>
+   <div class="shape-pick">${shapePicker(shape)}</div>`}
+
+function initShapePanel(){
+ $("shapePanel").innerHTML=
+  `<span class="eyebrow">Your result</span>
+   <div class="shape-name">Start the scan</div>
+   <p class="muted">Tap <strong>Start Camera</strong>, look straight ahead and tap <strong>Detect Face Shape</strong>. Hold still for a moment while we measure your face. Your recommended frames will appear here.</p>
+   <p class="muted" style="margin-top:1.2rem;font-size:.8rem">No camera? Tap <strong>Upload Photo</strong>, or choose the shape that looks most like your face:</p>
+   <div class="shape-pick">${shapePicker("")}</div>`}
+initShapePanel();
+
+/* ============================================================
+   ONLINE EYE CHECK — screening only, runs fully in the browser
+   Steps: set up → right eye → left eye → colour → astigmatism → Amsler → summary
+   ============================================================ */
+const ET_STEPS=["Set up your screen","Right eye · distance","Left eye · distance","Colour vision","Astigmatism dial","Amsler grid","Your summary"];
+/* Each line: decimal acuity, Snellen label. Letter height = 5 arcminutes ÷ decimal acuity */
+const ET_LEVELS=[{v:.1,s:"20/200"},{v:.16,s:"20/125"},{v:.25,s:"20/80"},{v:.4,s:"20/50"},{v:.63,s:"20/32"},{v:1,s:"20/20"}];
+const ET_ARCMIN5=Math.tan(5/60*Math.PI/180); /* height/distance for a 5-arcminute letter */
+const ET_NUMS=["12","8","29","45"];
+const ET_POOL=["3","5","6","7","8","9","12","15","16","26","29","35","42","45","57","73","74","96"];
+const etStage=$("etStage");
+let ET={w:320,dist:500,step:0,acu:{R:null,L:null},colour:null,astig:null,amsler:null,tr:null,cp:null,summary:""};
+
+function etSteps(){$("etSteps").innerHTML=ET_STEPS.map((t,i)=>`<li class="${i===ET.step?"active":i<ET.step?"done":""}"><i>${i<ET.step?"✓":i+1}</i>${t}</li>`).join("")}
+function etGo(n){ET.step=n;etSteps();document.removeEventListener("keydown",etKey);
+ [etSetup,()=>etIntro("R"),()=>etIntro("L"),etColour,etAstig,etAmsler,etSummary][n]()}
+function etRestart(){ET={w:ET.w,dist:ET.dist,step:0,acu:{R:null,L:null},colour:null,astig:null,amsler:null,tr:null,cp:null,summary:""};etGo(0)}
+
+/* Step 0 — calibrate the screen with a bank card so letter sizes are real-world accurate */
+function etSetup(){
+ etStage.innerHTML=`<h3 class="et-h">Set up your screen</h3>
+ <p class="muted">Hold a bank card against the screen and drag the slider until the grey card below is exactly the same size as your real card. This makes the letters the correct physical size.</p>
+ <div class="card-ref" id="cardRef" style="--w:${ET.w}px"><span>Match this to a bank card</span></div>
+ <input class="et-range" id="cardW" type="range" min="180" max="520" value="${ET.w}" aria-label="Card width">
+ <div><label for="etDist">How far will you sit from the screen?</label><select id="etDist"><option value="500" ${ET.dist===500?"selected":""}>About 50 cm — phone, arm slightly bent</option><option value="1000" ${ET.dist===1000?"selected":""}>About 1 metre — laptop or monitor</option></select></div>
+ <ul class="et-tips"><li>Wear your usual glasses or contact lenses.</li><li>Use a bright, evenly lit room and set screen brightness high.</li><li>Measure the distance with a piece of string or a tape — it matters.</li><li>Cover one eye with your palm without pressing on it.</li></ul>
+ <div class="et-actions"><button class="btn btn-primary" onclick="etGo(1)">Start with the right eye</button></div>`;
+ $("cardW").addEventListener("input",e=>{ET.w=+e.target.value;$("cardRef").style.setProperty("--w",ET.w+"px")});
+ $("etDist").addEventListener("change",e=>ET.dist=+e.target.value)}
+
+/* Steps 1 & 2 — tumbling-E acuity: 3 letters per line, 2 correct passes the line */
+function etIntro(eye){
+ const covered=eye==="R"?"left":"right";
+ etStage.innerHTML=`<h3 class="et-h">${eye==="R"?"Right":"Left"} eye</h3>
+ <p class="muted">Cover your <strong>${covered}</strong> eye with your palm. Sit about ${ET.dist===500?"50 cm":"1 metre"} from the screen. You'll see the letter E facing different ways — choose the direction the three arms point. You can also use your keyboard arrow keys.</p>
+ <div class="et-alert">If you can't tell which way it points, press “Can't tell” — a guess isn't needed.</div>
+ <div class="et-actions"><button class="btn btn-primary" onclick="etStartEye('${eye}')">I'm ready</button><button class="btn btn-outline" onclick="etGo(${ET.step-1})">Back</button></div>`}
+function etStartEye(eye){ET.tr={eye,li:0,n:0,ok:0,bad:0,best:-1,dir:-1};etTrial()}
+function etTrial(){
+ const t=ET.tr,L=ET_LEVELS[t.li];
+ let d;do{d=Math.floor(Math.random()*4)}while(d===t.dir);t.dir=d;
+ const mm=ET.dist*ET_ARCMIN5/L.v,px=Math.max(3,Math.round(mm*(ET.w/85.6)));
+ etStage.innerHTML=`<div class="et-meta"><span>${t.eye==="R"?"Right":"Left"} eye · cover the ${t.eye==="R"?"left":"right"}</span><span>Line ${t.li+1} of ${ET_LEVELS.length}</span></div>
+ <div class="et-board"><canvas id="etE" aria-label="Letter E"></canvas></div>
+ <p class="muted" style="text-align:center">Which way do the arms of the E point?</p>
+ <div class="dpad"><span></span><button onclick="etAnswer(3)" aria-label="Up">↑</button><span></span><button onclick="etAnswer(2)" aria-label="Left">←</button><button class="dpad-no" onclick="etAnswer(-1)">Can't tell</button><button onclick="etAnswer(0)" aria-label="Right">→</button><span></span><button onclick="etAnswer(1)" aria-label="Down">↓</button><span></span></div>
+ ${px<6?'<p class="muted" style="text-align:center;font-size:.76rem">On this screen the smallest lines are only a few pixels tall, so results for 20/32 and 20/20 are approximate.</p>':""}`;
+ etDrawE($("etE"),px,d);document.addEventListener("keydown",etKey)}
+function etKey(e){const m={ArrowRight:0,ArrowDown:1,ArrowLeft:2,ArrowUp:3}[e.key];if(m===undefined)return;e.preventDefault();etAnswer(m)}
+function etDrawE(cv,px,d){
+ const dpr=Math.min(devicePixelRatio||1,3),s=Math.max(5,Math.round(px*dpr/5)*5);cv.width=s;cv.height=s;cv.style.width=px+"px";cv.style.height=px+"px";
+ const c=cv.getContext("2d"),u=s/5;c.fillStyle="#fff";c.fillRect(0,0,s,s);
+ c.translate(s/2,s/2);c.rotate(d*Math.PI/2);c.translate(-s/2,-s/2);c.fillStyle="#000";
+ c.fillRect(0,0,u,s);[0,2,4].forEach(r=>c.fillRect(0,r*u,s,u))}
+function etAnswer(a){
+ const t=ET.tr;t.n++;a===t.dir?t.ok++:t.bad++;
+ if(t.ok>=2){t.best=t.li;if(t.li===ET_LEVELS.length-1)return etEyeDone();t.li++;t.n=0;t.ok=0;t.bad=0}
+ else if(t.bad>=2)return etEyeDone();
+ etTrial()}
+function etEyeDone(){ET.acu[ET.tr.eye]=ET.tr.best;ET.tr=null;etGo(ET.step+1)}
+
+/* Step 3 — colour vision: four generated dot-pattern plates */
+function etColour(){ET.cp={i:0,ok:0};etPlateScreen()}
+function etPlateScreen(){
+ const cp=ET.cp,num=ET_NUMS[cp.i];
+ const opts=[num];while(opts.length<4){const r=ET_POOL[Math.random()*ET_POOL.length|0];if(!opts.includes(r))opts.push(r)}
+ opts.sort(()=>Math.random()-.5);
+ etStage.innerHTML=`<div class="et-meta"><span>Both eyes open</span><span>Plate ${cp.i+1} of ${ET_NUMS.length}</span></div>
+ <h3 class="et-h">What number do you see?</h3>
+ <div class="et-board"><canvas id="etPlate" aria-label="Colour vision plate"></canvas></div>
+ <div class="et-opts">${opts.map(o=>`<button onclick="etPlateAnswer('${o}')">${o}</button>`).join("")}<button onclick="etPlateAnswer('')">I can't see a number</button></div>
+ <p class="muted" style="font-size:.78rem">Screen colours vary between devices, so treat this as a pointer only.</p>`;
+ etDrawPlate($("etPlate"),num)}
+function etPlateAnswer(a){const cp=ET.cp;if(a===ET_NUMS[cp.i])cp.ok++;cp.i++;if(cp.i>=ET_NUMS.length){ET.colour=cp.ok;etGo(4)}else etPlateScreen()}
+function etDrawPlate(cv,num){
+ const S=360,R=176;cv.width=S;cv.height=S;cv.style.width="min(360px,100%)";const c=cv.getContext("2d");
+ const m=document.createElement("canvas");m.width=m.height=S;const mc=m.getContext("2d");
+ mc.fillStyle="#000";mc.font="bold "+(num.length>1?210:270)+"px Arial,Helvetica,sans-serif";mc.textAlign="center";mc.textBaseline="middle";mc.fillText(num,S/2,S/2+10);
+ const md=mc.getImageData(0,0,S,S).data,dots=[];
+ const G=["#e9a679","#d98a5c","#cf7a4a","#eab88c","#c96a3d","#dd9a6e"],F=["#9fbf6a","#7fa850","#b4c97d","#8fb35e","#a8c276","#6f9a49"];
+ for(let i=0;i<5000;i++){
+  const r=3.5+Math.random()*4.5,a=Math.random()*6.283,d=Math.sqrt(Math.random())*(R-r),x=S/2+Math.cos(a)*d,y=S/2+Math.sin(a)*d;
+  let ok=true;for(const o of dots){const dx=o.x-x,dy=o.y-y,rr=o.r+r+1;if(dx*dx+dy*dy<rr*rr){ok=false;break}}
+  if(ok)dots.push({x,y,r})}
+ c.fillStyle="#fff";c.fillRect(0,0,S,S);
+ dots.forEach(o=>{const inside=md[((o.y|0)*S+(o.x|0))*4+3]>128,p=inside?F:G;c.fillStyle=p[Math.random()*p.length|0];c.beginPath();c.arc(o.x,o.y,o.r,0,6.283);c.fill()})}
+
+/* Step 4 — astigmatism dial */
+function etAstig(){
+ etStage.innerHTML=`<h3 class="et-h">Astigmatism dial</h3>
+ <p class="muted">Cover one eye and look at the centre dot from your usual distance. Do all the lines look equally dark and sharp? Then repeat with the other eye. Answer “some lines look different” if either eye shows it.</p>
+ <div class="et-board"><canvas id="etDial" aria-label="Astigmatism dial"></canvas></div>
+ <div class="et-choice"><button onclick="etAstigAnswer(false)">All lines look equally dark and sharp</button><button onclick="etAstigAnswer(true)">Some lines look darker, blurrier or double</button></div>`;
+ const cv=$("etDial"),S=320;cv.width=S;cv.height=S;cv.style.width="min(320px,100%)";const c=cv.getContext("2d");
+ c.fillStyle="#fff";c.fillRect(0,0,S,S);c.strokeStyle="#000";c.lineWidth=3;
+ for(let a=0;a<180;a+=15){const r=a*Math.PI/180,dx=Math.cos(r),dy=Math.sin(r);c.beginPath();c.moveTo(S/2+dx*22,S/2+dy*22);c.lineTo(S/2+dx*150,S/2+dy*150);c.moveTo(S/2-dx*22,S/2-dy*22);c.lineTo(S/2-dx*150,S/2-dy*150);c.stroke()}
+ c.fillStyle="#000";c.beginPath();c.arc(S/2,S/2,5,0,6.283);c.fill()}
+function etAstigAnswer(flag){ET.astig=flag;etGo(5)}
+
+/* Step 5 — Amsler grid */
+function etAmsler(){
+ etStage.innerHTML=`<h3 class="et-h">Amsler grid</h3>
+ <p class="muted">Hold the screen about 35 cm away, cover one eye and stare at the centre dot. Without moving your gaze, are all the lines straight with no gaps, waves or blurry patches? Repeat with the other eye.</p>
+ <div class="et-board"><canvas id="etGrid" aria-label="Amsler grid"></canvas></div>
+ <div class="et-choice"><button onclick="etAmslerAnswer(false)">Lines are straight and complete</button><button onclick="etAmslerAnswer(true)">Some lines look wavy, missing or blurred</button></div>`;
+ const cv=$("etGrid"),S=320,n=20,u=S/n;cv.width=S;cv.height=S;cv.style.width="min(320px,100%)";const c=cv.getContext("2d");
+ c.fillStyle="#fff";c.fillRect(0,0,S,S);c.strokeStyle="#000";c.lineWidth=1;
+ for(let i=0;i<=n;i++){c.beginPath();c.moveTo(i*u+.5,0);c.lineTo(i*u+.5,S);c.moveTo(0,i*u+.5);c.lineTo(S,i*u+.5);c.stroke()}
+ c.fillStyle="#000";c.beginPath();c.arc(S/2,S/2,5,0,6.283);c.fill()}
+function etAmslerAnswer(flag){ET.amsler=flag;etGo(6)}
+
+/* Step 6 — summary */
+function etAcuGrade(i){
+ if(i>=4)return{v:"ok",t:"Looks good",txt:i===5?"20/20":"20/32"};
+ if(i===3)return{v:"watch",t:"Worth a check",txt:"20/50"};
+ if(i>=0)return{v:"see",t:"Please get checked",txt:ET_LEVELS[i].s};
+ return{v:"see",t:"Please get checked",txt:"Below 20/200"}}
+function etSummary(){
+ const R=etAcuGrade(ET.acu.R),L=etAcuGrade(ET.acu.L);
+ const col=ET.colour>=3?{v:"ok",t:"Looks typical"}:{v:"watch",t:"Worth a check"};
+ const as=ET.astig?{v:"watch",t:"Worth a check"}:{v:"ok",t:"Looks even"};
+ const am=ET.amsler?{v:"see",t:"Please get checked"}:{v:"ok",t:"Looks regular"};
+ const all=[R,L,col,as,am],rank={ok:0,watch:1,see:2},worst=all.reduce((a,b)=>rank[b.v]>rank[a]?b.v:a,"ok");
+ const verdict=worst==="see"?"We recommend a full eye examination soon.":worst==="watch"?"A routine eye examination would be a good idea.":"No concerns from this quick screen.";
+ const note=worst==="see"?"One or more results fell outside the expected range. This screen can't say why, so a proper examination is the right next step.":worst==="watch"?"A few results suggest a check-up could help. Small differences are common and often easy to correct.":"Keep up routine eye exams — many eye conditions have no early symptoms, and a screen like this can't detect them.";
+ ET.summary=`Online screening (not a diagnosis) — Right eye: ${R.txt}; Left eye: ${L.txt}; Colour plates: ${ET.colour}/${ET_NUMS.length}; Astigmatism dial: ${ET.astig?"some lines differed":"even"}; Amsler grid: ${ET.amsler?"distortion reported":"regular"}. Screen set for ${ET.dist===500?"50 cm":"1 m"}.`;
+ etStage.innerHTML=`<span class="eyebrow">Your summary</span><div class="et-verdict">${verdict}</div><p class="muted">${note}</p>
+ <div class="et-res">
+  <div class="et-res-card"><small>Right eye distance</small><strong>${R.txt}</strong><span class="pill ${R.v}">${R.t}</span></div>
+  <div class="et-res-card"><small>Left eye distance</small><strong>${L.txt}</strong><span class="pill ${L.v}">${L.t}</span></div>
+  <div class="et-res-card"><small>Colour vision</small><strong>${ET.colour} of ${ET_NUMS.length} plates</strong><span class="pill ${col.v}">${col.t}</span></div>
+  <div class="et-res-card"><small>Astigmatism dial</small><strong>${ET.astig?"Some lines differed":"Even"}</strong><span class="pill ${as.v}">${as.t}</span></div>
+  <div class="et-res-card" style="grid-column:1/-1"><small>Amsler grid</small><strong>${ET.amsler?"Distortion reported":"Regular"}</strong><span class="pill ${am.v}">${am.t}</span></div>
+ </div>
+ <div class="et-alert"><strong>Get urgent care — don't wait for an appointment</strong> if you have sudden vision loss, flashes of light, a curtain over your vision, new floaters or eye pain.</div>
+ <div class="et-actions"><button class="btn btn-primary" onclick="etBook()">Book an eye check-up</button><button class="btn btn-outline" onclick="etRestart()">Retake the screening</button></div>
+ <p class="muted" style="font-size:.76rem">Results are shown only on this page. Nothing is uploaded or stored. This screening is not a diagnosis and does not replace an examination by an optometrist or ophthalmologist.</p>`}
+function etBook(){const n=$("bNotes");if(n)n.value=ET.summary;const t=$("bType");if(t)t.value="Routine eye examination";$("booking").scrollIntoView({behavior:"smooth"});toast("Screening summary added to your request notes")}
+etGo(0);
+
+function toggleAssistant(){const a=document.getElementById("assistant");a.classList.toggle("open");if(a.classList.contains("open")&&!document.getElementById("chatLog").children.length)botSay("Welcome to Olive Opticals. Let me help you find eyewear that suits your style.")}
+function botSay(t){const log=document.getElementById("chatLog");const d=document.createElement("div");d.className="msg bot";d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function sendChat(e){e.preventDefault();const inp=document.getElementById("chatInput");const q=inp.value.trim();if(!q)return;const log=document.getElementById("chatLog");const u=document.createElement("div");u.className="msg user";u.textContent=q;log.appendChild(u);inp.value="";log.scrollTop=log.scrollHeight;
+setTimeout(()=>{const s=q.toLowerCase();
+if(s.includes("budget")||s.includes("price"))botSay("Demo options under ₹5,000: "+products.filter(p=>p.price<5000).slice(0,3).map(p=>p.name+" — "+fmt(p.price)).join("; ")+".")
+else if(s.includes("sunglass"))botSay("Demo sunglasses: Vista Shield, Sable Cat-Eye and Terra Aviator.")
+else if(s.includes("eye test")||s.includes("vision")||s.includes("screening")||s.includes("check my eye"))botSay("Try the Online Eye Test section — it checks distance vision, colour vision, astigmatism and the Amsler grid in about five minutes. It's a screening only, not a diagnosis.")
+else if(s.includes("book")||s.includes("appointment"))botSay("Use the Eye Check-Up section. This demo does not reserve a real slot.")
+else if(s.includes("lens")||s.includes("blue"))botSay("Lens options include single-vision, reading, progressive, photochromic, anti-reflective and blue-light-filtering. Blue-light filters do not prevent eye disease.")
+else if(s.includes("hour")||s.includes("location")||s.includes("thally"))botSay("Olive Opticals is in Thally, Tamil Nadu. Demo hours: Mon–Sat, 10 AM–8 PM.")
+else if(s.includes("face")||s.includes("shape"))botSay("Try the Face Shape Scan section — it detects your face shape with your camera and recommends matching frames.")
+else{const m=products.find(p=>q.toLowerCase().split(" ").some(w=>w.length>3&&[p.name,p.brand,p.shape,p.style].join(" ").toLowerCase().includes(w)));botSay(m?`You may like ${m.name} — ${fmt(m.price)} in this demo catalogue.`:"I can help with frames, budget, lenses, store details or appointments.")}},450)}
+function submitBooking(e){e.preventDefault();const ref="OLV-DEMO-"+Math.random().toString(36).slice(2,8).toUpperCase();toast("Demo request · "+ref);botSay("Demo appointment reference: "+ref+". This does not confirm a real appointment.");e.target.reset()}
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)en.target.classList.add("visible")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+renderProducts();updateCart();renderWishlist();
+
+</script>
+</body>
+</html>
